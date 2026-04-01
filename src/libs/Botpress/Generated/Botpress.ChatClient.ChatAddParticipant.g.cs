@@ -250,6 +250,7 @@ namespace Botpress
             string userId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Botpress.ChatAddParticipantRequest
             {
                 UserId = userId,
