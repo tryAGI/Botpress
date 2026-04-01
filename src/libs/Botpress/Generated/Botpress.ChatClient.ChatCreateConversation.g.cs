@@ -242,6 +242,7 @@ namespace Botpress
             string? id = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Botpress.ChatCreateConversationRequest
             {
                 Id = id,
