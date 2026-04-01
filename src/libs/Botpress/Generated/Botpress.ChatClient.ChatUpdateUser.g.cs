@@ -250,7 +250,6 @@ namespace Botpress
             string? profile = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Botpress.ChatUpdateUserRequest
             {
                 Name = name,
