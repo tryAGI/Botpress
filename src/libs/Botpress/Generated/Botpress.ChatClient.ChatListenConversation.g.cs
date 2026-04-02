@@ -105,13 +105,13 @@ namespace Botpress
                     if (ReadResponseAsString)
                     {
                         __content_default = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_default = global::Botpress.ChatListenConversationResponse2.FromJson(__content_default, JsonSerializerContext);
+                        __value_default = global::Botpress.ChatListenConversationResponse2.FromJson(__content_default, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_default = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_default = global::Botpress.ChatListenConversationResponse2.FromJson(__content_default, JsonSerializerContext);
+                        __value_default = global::Botpress.ChatListenConversationResponse2.FromJson(__content_default, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -155,7 +155,7 @@ namespace Botpress
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Botpress.ChatListenConversationResponse.FromJson(__content, JsonSerializerContext) ??
+                        global::Botpress.ChatListenConversationResponse.FromJson(__content, JsonSerializerOptions) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -186,7 +186,7 @@ namespace Botpress
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Botpress.ChatListenConversationResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        await global::Botpress.ChatListenConversationResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
