@@ -5,6 +5,25 @@ namespace Botpress
 {
     public partial class RuntimeClient
     {
+
+
+        private static readonly global::Botpress.EndPointSecurityRequirement s_RuntimePatchStateSecurityRequirement0 =
+            new global::Botpress.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Botpress.EndPointAuthorizationRequirement[]
+                {                    new global::Botpress.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Botpress.EndPointSecurityRequirement[] s_RuntimePatchStateSecurityRequirements =
+            new global::Botpress.EndPointSecurityRequirement[]
+            {                s_RuntimePatchStateSecurityRequirement0,
+            };
         partial void PrepareRuntimePatchStateArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::Botpress.RuntimePatchStateType type,
@@ -57,9 +76,15 @@ namespace Botpress
                 xIntegrationId: ref xIntegrationId,
                 xIntegrationAlias: ref xIntegrationAlias);
 
+
+            var __authorizations = global::Botpress.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_RuntimePatchStateSecurityRequirements,
+                operationName: "RuntimePatchStateAsync");
+
             var __pathBuilder = new global::Botpress.PathBuilder(
                 path: $"/v1/chat/states/{type}/{id}/{name}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -69,7 +94,7 @@ namespace Botpress
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

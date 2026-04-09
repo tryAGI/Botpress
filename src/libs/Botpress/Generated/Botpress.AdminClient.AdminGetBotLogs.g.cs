@@ -5,6 +5,25 @@ namespace Botpress
 {
     public partial class AdminClient
     {
+
+
+        private static readonly global::Botpress.EndPointSecurityRequirement s_AdminGetBotLogsSecurityRequirement0 =
+            new global::Botpress.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Botpress.EndPointAuthorizationRequirement[]
+                {                    new global::Botpress.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Botpress.EndPointSecurityRequirement[] s_AdminGetBotLogsSecurityRequirements =
+            new global::Botpress.EndPointSecurityRequirement[]
+            {                s_AdminGetBotLogsSecurityRequirement0,
+            };
         partial void PrepareAdminGetBotLogsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
@@ -82,6 +101,12 @@ namespace Botpress
                 xWorkspaceId: ref xWorkspaceId,
                 xMultipleIntegrations: ref xMultipleIntegrations);
 
+
+            var __authorizations = global::Botpress.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AdminGetBotLogsSecurityRequirements,
+                operationName: "AdminGetBotLogsAsync");
+
             var __pathBuilder = new global::Botpress.PathBuilder(
                 path: $"/v1/admin/bots/{id}/logs",
                 baseUri: HttpClient.BaseAddress); 
@@ -94,7 +119,7 @@ namespace Botpress
                 .AddOptionalParameter("conversationId", conversationId)
                 .AddOptionalParameter("messageContains", messageContains)
                 .AddOptionalParameter("nextToken", nextToken) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -104,7 +129,7 @@ namespace Botpress
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

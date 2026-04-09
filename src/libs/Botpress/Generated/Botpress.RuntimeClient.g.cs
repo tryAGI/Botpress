@@ -12,7 +12,7 @@ namespace Botpress
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.botpress.cloud";
+        public const string DefaultBaseUrl = "https://api.botpress.cloud/";
 
         private bool _disposeHttpClient = true;
 
