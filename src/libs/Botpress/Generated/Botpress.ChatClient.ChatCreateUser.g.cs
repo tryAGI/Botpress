@@ -5,6 +5,25 @@ namespace Botpress
 {
     public partial class ChatClient
     {
+
+
+        private static readonly global::Botpress.EndPointSecurityRequirement s_ChatCreateUserSecurityRequirement0 =
+            new global::Botpress.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Botpress.EndPointAuthorizationRequirement[]
+                {                    new global::Botpress.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Botpress.EndPointSecurityRequirement[] s_ChatCreateUserSecurityRequirements =
+            new global::Botpress.EndPointSecurityRequirement[]
+            {                s_ChatCreateUserSecurityRequirement0,
+            };
         partial void PrepareChatCreateUserArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Botpress.ChatCreateUserRequest request);
@@ -41,9 +60,15 @@ namespace Botpress
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Botpress.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ChatCreateUserSecurityRequirements,
+                operationName: "ChatCreateUserAsync");
+
             var __pathBuilder = new global::Botpress.PathBuilder(
                 path: "/chat-api/users",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -53,7 +78,7 @@ namespace Botpress
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

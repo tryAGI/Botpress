@@ -5,6 +5,25 @@ namespace Botpress
 {
     public partial class RuntimeClient
     {
+
+
+        private static readonly global::Botpress.EndPointSecurityRequirement s_RuntimeDeleteUserSecurityRequirement0 =
+            new global::Botpress.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Botpress.EndPointAuthorizationRequirement[]
+                {                    new global::Botpress.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Botpress.EndPointSecurityRequirement[] s_RuntimeDeleteUserSecurityRequirements =
+            new global::Botpress.EndPointSecurityRequirement[]
+            {                s_RuntimeDeleteUserSecurityRequirement0,
+            };
         partial void PrepareRuntimeDeleteUserArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
@@ -47,9 +66,15 @@ namespace Botpress
                 xIntegrationId: ref xIntegrationId,
                 xIntegrationAlias: ref xIntegrationAlias);
 
+
+            var __authorizations = global::Botpress.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_RuntimeDeleteUserSecurityRequirements,
+                operationName: "RuntimeDeleteUserAsync");
+
             var __pathBuilder = new global::Botpress.PathBuilder(
                 path: $"/v1/chat/users/{id}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -59,7 +84,7 @@ namespace Botpress
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
