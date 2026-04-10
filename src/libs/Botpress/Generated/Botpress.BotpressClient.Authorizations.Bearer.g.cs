@@ -25,6 +25,7 @@ namespace Botpress
             Authorizations.Add(new global::Botpress.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "HttpBearer",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,

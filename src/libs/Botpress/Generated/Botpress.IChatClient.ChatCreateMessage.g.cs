@@ -10,12 +10,14 @@ namespace Botpress
         /// </summary>
         /// <param name="xUserKey"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Botpress.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Botpress.ChatCreateMessageResponse> ChatCreateMessageAsync(
             string xUserKey,
 
             global::Botpress.ChatCreateMessageRequest request,
+            global::Botpress.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create Message<br/>
@@ -28,12 +30,14 @@ namespace Botpress
         /// <param name="conversationId">
         /// ID of the [Conversation](#schema_conversation)
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Botpress.ChatCreateMessageResponse> ChatCreateMessageAsync(
             string xUserKey,
             global::Botpress.OneOf<global::Botpress.ChatCreateMessageRequestPayloadVariant1, global::Botpress.ChatCreateMessageRequestPayloadVariant2, global::Botpress.ChatCreateMessageRequestPayloadVariant3, global::Botpress.ChatCreateMessageRequestPayloadVariant4, global::Botpress.ChatCreateMessageRequestPayloadVariant5, global::Botpress.ChatCreateMessageRequestPayloadVariant6, global::Botpress.ChatCreateMessageRequestPayloadVariant7, global::Botpress.ChatCreateMessageRequestPayloadVariant8, global::Botpress.ChatCreateMessageRequestPayloadVariant9, global::Botpress.ChatCreateMessageRequestPayloadVariant10, global::Botpress.ChatCreateMessageRequestPayloadVariant11> payload,
             string conversationId,
+            global::Botpress.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
