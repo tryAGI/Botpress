@@ -135,14 +135,14 @@ namespace Botpress
             }
 
                 __httpRequest.Headers.TryAddWithoutValidation("x-bot-id", xBotId.ToString());
-                if (xIntegrationId != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-integration-id", xIntegrationId.ToString());
-                }
-                if (xIntegrationAlias != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-integration-alias", xIntegrationAlias.ToString());
-                }
+            if (xIntegrationId != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-integration-id", xIntegrationId.ToString());
+            }
+            if (xIntegrationAlias != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-integration-alias", xIntegrationAlias.ToString());
+            }
 
                 global::Botpress.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

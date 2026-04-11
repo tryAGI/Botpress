@@ -119,10 +119,10 @@ namespace Botpress
                 } 
             }
 
-                if (xMultipleIntegrations != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-multiple-integrations", xMultipleIntegrations.ToString());
-                }
+            if (xMultipleIntegrations != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-multiple-integrations", xMultipleIntegrations.ToString());
+            }
 
                 global::Botpress.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
