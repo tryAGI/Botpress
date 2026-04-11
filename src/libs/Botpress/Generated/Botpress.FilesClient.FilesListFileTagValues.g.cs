@@ -148,26 +148,26 @@ namespace Botpress
             }
 
                 __httpRequest.Headers.TryAddWithoutValidation("x-bot-id", xBotId.ToString());
-                if (xIntegrationId != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-integration-id", xIntegrationId.ToString());
-                }
-                if (xIntegrationAlias != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-integration-alias", xIntegrationAlias.ToString());
-                }
-                if (xIntegrationName != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-integration-name", xIntegrationName.ToString());
-                }
-                if (xUserId != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-user-id", xUserId.ToString());
-                }
-                if (xUserRole != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-user-role", xUserRole.ToString());
-                }
+            if (xIntegrationId != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-integration-id", xIntegrationId.ToString());
+            }
+            if (xIntegrationAlias != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-integration-alias", xIntegrationAlias.ToString());
+            }
+            if (xIntegrationName != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-integration-name", xIntegrationName.ToString());
+            }
+            if (xUserId != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-user-id", xUserId.ToString());
+            }
+            if (xUserRole != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-user-role", xUserRole.ToString());
+            }
 
                 global::Botpress.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
