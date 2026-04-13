@@ -10326,6 +10326,7 @@
                   "payload": {
                     "oneOf": [
                       {
+                        "title": "Audio",
                         "type": "object",
                         "properties": {
                           "audioUrl": {
@@ -10345,6 +10346,7 @@
                         ]
                       },
                       {
+                        "title": "Card",
                         "type": "object",
                         "properties": {
                           "title": {
@@ -10402,6 +10404,7 @@
                         ]
                       },
                       {
+                        "title": "Carousel",
                         "type": "object",
                         "properties": {
                           "items": {
@@ -10470,6 +10473,7 @@
                         ]
                       },
                       {
+                        "title": "Choice",
                         "type": "object",
                         "properties": {
                           "text": {
@@ -10510,6 +10514,7 @@
                         ]
                       },
                       {
+                        "title": "Dropdown",
                         "type": "object",
                         "properties": {
                           "text": {
@@ -10550,6 +10555,7 @@
                         ]
                       },
                       {
+                        "title": "File",
                         "type": "object",
                         "properties": {
                           "fileUrl": {
@@ -10573,6 +10579,7 @@
                         ]
                       },
                       {
+                        "title": "Image",
                         "type": "object",
                         "properties": {
                           "imageUrl": {
@@ -10592,6 +10599,7 @@
                         ]
                       },
                       {
+                        "title": "Location",
                         "type": "object",
                         "properties": {
                           "latitude": {
@@ -10620,6 +10628,7 @@
                         ]
                       },
                       {
+                        "title": "Markdown",
                         "type": "object",
                         "properties": {
                           "markdown": {
@@ -10639,6 +10648,7 @@
                         ]
                       },
                       {
+                        "title": "Text",
                         "type": "object",
                         "properties": {
                           "text": {
@@ -10658,6 +10668,7 @@
                         ]
                       },
                       {
+                        "title": "Video",
                         "type": "object",
                         "properties": {
                           "videoUrl": {

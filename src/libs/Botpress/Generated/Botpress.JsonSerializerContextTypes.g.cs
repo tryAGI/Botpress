@@ -992,139 +992,139 @@ namespace Botpress
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant1? Type241 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadAudio? Type241 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant1Type? Type242 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadAudioType? Type242 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant2? Type243 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCard? Type243 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadVariant2Action>? Type244 { get; set; }
+        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadCardAction>? Type244 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant2Action? Type245 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCardAction? Type245 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant2ActionAction? Type246 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCardActionAction? Type246 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant2Type? Type247 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCardType? Type247 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant3? Type248 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCarousel? Type248 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadVariant3Item>? Type249 { get; set; }
+        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadCarouselItem>? Type249 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant3Item? Type250 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCarouselItem? Type250 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadVariant3ItemAction>? Type251 { get; set; }
+        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadCarouselItemAction>? Type251 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant3ItemAction? Type252 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCarouselItemAction? Type252 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant3ItemActionAction? Type253 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCarouselItemActionAction? Type253 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant3Type? Type254 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadCarouselType? Type254 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant4? Type255 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadChoice? Type255 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadVariant4Option>? Type256 { get; set; }
+        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadChoiceOption>? Type256 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant4Option? Type257 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadChoiceOption? Type257 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant4Type? Type258 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadChoiceType? Type258 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant5? Type259 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadDropdown? Type259 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadVariant5Option>? Type260 { get; set; }
+        public global::System.Collections.Generic.IList<global::Botpress.ChatCreateMessageRequestPayloadDropdownOption>? Type260 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant5Option? Type261 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadDropdownOption? Type261 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant5Type? Type262 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadDropdownType? Type262 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant6? Type263 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadFile? Type263 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant6Type? Type264 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadFileType? Type264 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant7? Type265 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadImage? Type265 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant7Type? Type266 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadImageType? Type266 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant8? Type267 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadLocation? Type267 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant8Type? Type268 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadLocationType? Type268 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant9? Type269 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadMarkdown? Type269 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant9Type? Type270 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadMarkdownType? Type270 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant10? Type271 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadText? Type271 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant10Type? Type272 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadTextType? Type272 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant11? Type273 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadVideo? Type273 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Botpress.ChatCreateMessageRequestPayloadVariant11Type? Type274 { get; set; }
+        public global::Botpress.ChatCreateMessageRequestPayloadVideoType? Type274 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -2429,23 +2429,23 @@ namespace Botpress
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadVariant2Action>? ListType8 { get; set; }
+        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadCardAction>? ListType8 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadVariant3Item>? ListType9 { get; set; }
+        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadCarouselItem>? ListType9 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadVariant3ItemAction>? ListType10 { get; set; }
+        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadCarouselItemAction>? ListType10 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadVariant4Option>? ListType11 { get; set; }
+        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadChoiceOption>? ListType11 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadVariant5Option>? ListType12 { get; set; }
+        public global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageRequestPayloadDropdownOption>? ListType12 { get; set; }
         /// <summary>
         /// 
         /// </summary>
