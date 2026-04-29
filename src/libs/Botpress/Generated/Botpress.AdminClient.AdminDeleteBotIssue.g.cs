@@ -141,9 +141,9 @@ namespace Botpress
                 PrepareAdminDeleteBotIssueRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    issueId: issueId,
-                    xWorkspaceId: xWorkspaceId,
+                    id: id!,
+                    issueId: issueId!,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

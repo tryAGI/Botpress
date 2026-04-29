@@ -172,8 +172,8 @@ namespace Botpress
                 PrepareTablesUpsertTableRowsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    table: table,
-                    xBotId: xBotId,
+                    table: table!,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias,
                     xIntegrationName: xIntegrationName,

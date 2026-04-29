@@ -145,8 +145,8 @@ namespace Botpress
                 PrepareRuntimeGetConversationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    xBotId: xBotId,
+                    id: id!,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

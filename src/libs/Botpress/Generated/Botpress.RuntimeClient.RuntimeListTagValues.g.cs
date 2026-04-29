@@ -160,9 +160,9 @@ namespace Botpress
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     nextToken: nextToken,
-                    key: key,
-                    type: type,
-                    xBotId: xBotId,
+                    key: key!,
+                    type: type!,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

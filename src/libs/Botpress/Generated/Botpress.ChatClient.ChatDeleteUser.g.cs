@@ -128,7 +128,7 @@ namespace Botpress
                 PrepareChatDeleteUserRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xUserKey: xUserKey);
+                    xUserKey: xUserKey!);
 
                 return __httpRequest;
             }

@@ -172,8 +172,8 @@ namespace Botpress
                 PrepareTablesDuplicateTableRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sourceTableId: sourceTableId,
-                    xBotId: xBotId,
+                    sourceTableId: sourceTableId!,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias,
                     xIntegrationName: xIntegrationName,

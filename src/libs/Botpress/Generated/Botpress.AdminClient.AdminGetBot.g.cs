@@ -144,9 +144,9 @@ namespace Botpress
                 PrepareAdminGetBotRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     shouldMergePlugins: shouldMergePlugins,
-                    xWorkspaceId: xWorkspaceId,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

@@ -176,7 +176,7 @@ namespace Botpress
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     nextToken: nextToken,
-                    xBotId: xBotId,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias,
                     xIntegrationName: xIntegrationName,

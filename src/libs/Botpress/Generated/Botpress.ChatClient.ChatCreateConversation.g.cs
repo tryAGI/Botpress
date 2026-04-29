@@ -142,7 +142,7 @@ namespace Botpress
                 PrepareChatCreateConversationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xUserKey: xUserKey,
+                    xUserKey: xUserKey!,
                     request: request);
 
                 return __httpRequest;

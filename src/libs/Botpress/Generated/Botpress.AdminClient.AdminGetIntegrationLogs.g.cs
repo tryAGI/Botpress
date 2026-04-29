@@ -180,15 +180,15 @@ namespace Botpress
                 PrepareAdminGetIntegrationLogsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    timeStart: timeStart,
+                    id: id!,
+                    timeStart: timeStart!,
                     timeEnd: timeEnd,
                     level: level,
                     userId: userId,
                     conversationId: conversationId,
                     messageContains: messageContains,
                     nextToken: nextToken,
-                    xWorkspaceId: xWorkspaceId,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

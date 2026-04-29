@@ -140,7 +140,7 @@ namespace Botpress
                 PrepareRuntimeCreateUserRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xBotId: xBotId,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

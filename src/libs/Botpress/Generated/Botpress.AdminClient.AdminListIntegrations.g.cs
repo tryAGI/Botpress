@@ -224,7 +224,7 @@ namespace Botpress
                     direction: direction,
                     visibility: visibility,
                     dev: dev,
-                    xWorkspaceId: xWorkspaceId,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

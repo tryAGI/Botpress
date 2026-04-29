@@ -198,7 +198,7 @@ namespace Botpress
                     rangeField: rangeField,
                     sortField: sortField,
                     sortDirection: sortDirection,
-                    xBotId: xBotId,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

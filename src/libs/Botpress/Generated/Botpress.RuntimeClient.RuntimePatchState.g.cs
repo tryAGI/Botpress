@@ -155,10 +155,10 @@ namespace Botpress
                 PrepareRuntimePatchStateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    type: type,
-                    id: id,
-                    name: name,
-                    xBotId: xBotId,
+                    type: type!,
+                    id: id!,
+                    name: name!,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

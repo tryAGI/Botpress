@@ -191,7 +191,7 @@ namespace Botpress
                     messageId: messageId,
                     workflowId: workflowId,
                     status: status,
-                    xBotId: xBotId,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

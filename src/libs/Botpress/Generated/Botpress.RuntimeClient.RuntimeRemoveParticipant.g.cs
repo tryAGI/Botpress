@@ -150,9 +150,9 @@ namespace Botpress
                 PrepareRuntimeRemoveParticipantRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    userId: userId,
-                    xBotId: xBotId,
+                    id: id!,
+                    userId: userId!,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

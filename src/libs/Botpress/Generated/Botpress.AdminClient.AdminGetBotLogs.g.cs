@@ -186,8 +186,8 @@ namespace Botpress
                 PrepareAdminGetBotLogsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    timeStart: timeStart,
+                    id: id!,
+                    timeStart: timeStart!,
                     timeEnd: timeEnd,
                     level: level,
                     userId: userId,
@@ -195,7 +195,7 @@ namespace Botpress
                     conversationId: conversationId,
                     messageContains: messageContains,
                     nextToken: nextToken,
-                    xWorkspaceId: xWorkspaceId,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

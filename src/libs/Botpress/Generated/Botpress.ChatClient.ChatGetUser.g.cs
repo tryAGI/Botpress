@@ -128,7 +128,7 @@ namespace Botpress
                 PrepareChatGetUserRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xUserKey: xUserKey);
+                    xUserKey: xUserKey!);
 
                 return __httpRequest;
             }

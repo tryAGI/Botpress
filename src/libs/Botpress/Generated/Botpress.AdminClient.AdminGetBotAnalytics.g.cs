@@ -150,10 +150,10 @@ namespace Botpress
                 PrepareAdminGetBotAnalyticsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    startDate: startDate,
-                    endDate: endDate,
-                    xWorkspaceId: xWorkspaceId,
+                    id: id!,
+                    startDate: startDate!,
+                    endDate: endDate!,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

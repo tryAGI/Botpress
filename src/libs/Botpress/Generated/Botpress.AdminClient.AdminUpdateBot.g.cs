@@ -136,8 +136,8 @@ namespace Botpress
                 PrepareAdminUpdateBotRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    xWorkspaceId: xWorkspaceId,
+                    id: id!,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

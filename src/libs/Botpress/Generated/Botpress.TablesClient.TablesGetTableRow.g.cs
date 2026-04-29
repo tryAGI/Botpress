@@ -180,9 +180,9 @@ namespace Botpress
                 PrepareTablesGetTableRowRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    table: table,
-                    id: id,
-                    xBotId: xBotId,
+                    table: table!,
+                    id: id!,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias,
                     xIntegrationName: xIntegrationName,

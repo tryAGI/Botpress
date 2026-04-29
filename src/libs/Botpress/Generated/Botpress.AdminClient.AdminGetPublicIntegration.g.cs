@@ -135,8 +135,8 @@ namespace Botpress
                 PrepareAdminGetPublicIntegrationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name,
-                    version: version,
+                    name: name!,
+                    version: version!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

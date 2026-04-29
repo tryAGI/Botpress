@@ -138,9 +138,9 @@ namespace Botpress
                 PrepareChatRemoveParticipantRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xUserKey: xUserKey,
-                    conversationId: conversationId,
-                    userId: userId);
+                    xUserKey: xUserKey!,
+                    conversationId: conversationId!,
+                    userId: userId!);
 
                 return __httpRequest;
             }

@@ -144,9 +144,9 @@ namespace Botpress
                 PrepareAdminListBotIssuesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     nextToken: nextToken,
-                    xWorkspaceId: xWorkspaceId,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

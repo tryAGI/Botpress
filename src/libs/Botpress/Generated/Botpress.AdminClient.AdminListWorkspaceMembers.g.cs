@@ -140,7 +140,7 @@ namespace Botpress
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     nextToken: nextToken,
-                    xWorkspaceId: xWorkspaceId,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;
