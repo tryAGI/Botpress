@@ -168,7 +168,7 @@ namespace Botpress
                     nextToken: nextToken,
                     sortField: sortField,
                     sortDirection: sortDirection,
-                    xWorkspaceId: xWorkspaceId,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

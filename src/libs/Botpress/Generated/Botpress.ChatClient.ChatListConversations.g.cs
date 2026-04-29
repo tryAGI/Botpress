@@ -136,7 +136,7 @@ namespace Botpress
                 PrepareChatListConversationsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xUserKey: xUserKey,
+                    xUserKey: xUserKey!,
                     nextToken: nextToken);
 
                 return __httpRequest;

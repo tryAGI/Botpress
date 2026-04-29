@@ -177,7 +177,7 @@ namespace Botpress
                     tags: tags,
                     afterDate: afterDate,
                     beforeDate: beforeDate,
-                    xBotId: xBotId,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

@@ -141,9 +141,9 @@ namespace Botpress
                 PrepareAdminGetIntegrationByNameRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name,
-                    version: version,
-                    xWorkspaceId: xWorkspaceId,
+                    name: name!,
+                    version: version!,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

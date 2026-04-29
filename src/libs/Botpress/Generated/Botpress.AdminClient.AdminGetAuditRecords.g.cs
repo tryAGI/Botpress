@@ -139,7 +139,7 @@ namespace Botpress
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     nextToken: nextToken,
-                    id: id,
+                    id: id!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;

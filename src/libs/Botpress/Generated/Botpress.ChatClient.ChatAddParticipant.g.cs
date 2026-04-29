@@ -147,8 +147,8 @@ namespace Botpress
                 PrepareChatAddParticipantRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xUserKey: xUserKey,
-                    conversationId: conversationId,
+                    xUserKey: xUserKey!,
+                    conversationId: conversationId!,
                     request: request);
 
                 return __httpRequest;

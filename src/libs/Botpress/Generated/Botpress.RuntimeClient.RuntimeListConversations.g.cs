@@ -205,7 +205,7 @@ namespace Botpress
                     channel: channel,
                     afterDate: afterDate,
                     beforeDate: beforeDate,
-                    xBotId: xBotId,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias);
 

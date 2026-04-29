@@ -186,10 +186,10 @@ namespace Botpress
                 PrepareFilesCopyFileRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrKey: idOrKey,
-                    destinationKey: destinationKey,
+                    idOrKey: idOrKey!,
+                    destinationKey: destinationKey!,
                     xDestinationBotId: xDestinationBotId,
-                    xBotId: xBotId,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias,
                     xIntegrationName: xIntegrationName,

@@ -211,7 +211,7 @@ namespace Botpress
                     tags: tags,
                     ids: ids,
                     indexed: indexed,
-                    xBotId: xBotId,
+                    xBotId: xBotId!,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias,
                     xIntegrationName: xIntegrationName,

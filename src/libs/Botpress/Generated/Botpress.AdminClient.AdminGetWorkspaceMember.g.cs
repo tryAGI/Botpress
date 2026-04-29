@@ -131,7 +131,7 @@ namespace Botpress
                 PrepareAdminGetWorkspaceMemberRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xWorkspaceId: xWorkspaceId,
+                    xWorkspaceId: xWorkspaceId!,
                     xMultipleIntegrations: xMultipleIntegrations);
 
                 return __httpRequest;
