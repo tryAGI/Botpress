@@ -691,6 +691,22 @@ namespace Botpress
 
             typeof(global::Botpress.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>), TypeInfoPropertyName = "ChatMessagePayloadVariant11_30375077cfc0820a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>), TypeInfoPropertyName = "ChatCreateMessageRequestPayloadVideo_0e04a788e38dc6c9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant11_a0e602ddc29f7a9b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant12, global::Botpress.ChatListMessagesResponseMessagePayloadVariant22, global::Botpress.ChatListMessagesResponseMessagePayloadVariant32, global::Botpress.ChatListMessagesResponseMessagePayloadVariant42, global::Botpress.ChatListMessagesResponseMessagePayloadVariant52, global::Botpress.ChatListMessagesResponseMessagePayloadVariant62, global::Botpress.ChatListMessagesResponseMessagePayloadVariant72, global::Botpress.ChatListMessagesResponseMessagePayloadVariant82, global::Botpress.ChatListMessagesResponseMessagePayloadVariant92, global::Botpress.ChatListMessagesResponseMessagePayloadVariant102, global::Botpress.ChatListMessagesResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant112_fbc5a859c12866df")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant1, global::Botpress.ChatGetMessageResponseMessagePayloadVariant2, global::Botpress.ChatGetMessageResponseMessagePayloadVariant3, global::Botpress.ChatGetMessageResponseMessagePayloadVariant4, global::Botpress.ChatGetMessageResponseMessagePayloadVariant5, global::Botpress.ChatGetMessageResponseMessagePayloadVariant6, global::Botpress.ChatGetMessageResponseMessagePayloadVariant7, global::Botpress.ChatGetMessageResponseMessagePayloadVariant8, global::Botpress.ChatGetMessageResponseMessagePayloadVariant9, global::Botpress.ChatGetMessageResponseMessagePayloadVariant10, global::Botpress.ChatGetMessageResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant11_6555f8326b55cfad")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant12, global::Botpress.ChatGetMessageResponseMessagePayloadVariant22, global::Botpress.ChatGetMessageResponseMessagePayloadVariant32, global::Botpress.ChatGetMessageResponseMessagePayloadVariant42, global::Botpress.ChatGetMessageResponseMessagePayloadVariant52, global::Botpress.ChatGetMessageResponseMessagePayloadVariant62, global::Botpress.ChatGetMessageResponseMessagePayloadVariant72, global::Botpress.ChatGetMessageResponseMessagePayloadVariant82, global::Botpress.ChatGetMessageResponseMessagePayloadVariant92, global::Botpress.ChatGetMessageResponseMessagePayloadVariant102, global::Botpress.ChatGetMessageResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant112_4f90c00d751ae5f5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant6, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant7, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant8, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant9, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant10, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant11_bb7acc1a28a0e3f0")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant32, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant42, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant52, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant62, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant72, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant82, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant92, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant102, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant112_7859003751ea8545")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>?), TypeInfoPropertyName = "ChatMessagePayloadVariant11_fc3629e5012e3e3f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>?), TypeInfoPropertyName = "ChatCreateMessageRequestPayloadVideo_2e32a376597eae8c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>?), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant11_9c99b3d4766ccd23")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant12, global::Botpress.ChatListMessagesResponseMessagePayloadVariant22, global::Botpress.ChatListMessagesResponseMessagePayloadVariant32, global::Botpress.ChatListMessagesResponseMessagePayloadVariant42, global::Botpress.ChatListMessagesResponseMessagePayloadVariant52, global::Botpress.ChatListMessagesResponseMessagePayloadVariant62, global::Botpress.ChatListMessagesResponseMessagePayloadVariant72, global::Botpress.ChatListMessagesResponseMessagePayloadVariant82, global::Botpress.ChatListMessagesResponseMessagePayloadVariant92, global::Botpress.ChatListMessagesResponseMessagePayloadVariant102, global::Botpress.ChatListMessagesResponseMessagePayloadVariant112>?), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant112_1606bd8d3b87ff35")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant1, global::Botpress.ChatGetMessageResponseMessagePayloadVariant2, global::Botpress.ChatGetMessageResponseMessagePayloadVariant3, global::Botpress.ChatGetMessageResponseMessagePayloadVariant4, global::Botpress.ChatGetMessageResponseMessagePayloadVariant5, global::Botpress.ChatGetMessageResponseMessagePayloadVariant6, global::Botpress.ChatGetMessageResponseMessagePayloadVariant7, global::Botpress.ChatGetMessageResponseMessagePayloadVariant8, global::Botpress.ChatGetMessageResponseMessagePayloadVariant9, global::Botpress.ChatGetMessageResponseMessagePayloadVariant10, global::Botpress.ChatGetMessageResponseMessagePayloadVariant11>?), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant11_3d3d49279ce79c7a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant12, global::Botpress.ChatGetMessageResponseMessagePayloadVariant22, global::Botpress.ChatGetMessageResponseMessagePayloadVariant32, global::Botpress.ChatGetMessageResponseMessagePayloadVariant42, global::Botpress.ChatGetMessageResponseMessagePayloadVariant52, global::Botpress.ChatGetMessageResponseMessagePayloadVariant62, global::Botpress.ChatGetMessageResponseMessagePayloadVariant72, global::Botpress.ChatGetMessageResponseMessagePayloadVariant82, global::Botpress.ChatGetMessageResponseMessagePayloadVariant92, global::Botpress.ChatGetMessageResponseMessagePayloadVariant102, global::Botpress.ChatGetMessageResponseMessagePayloadVariant112>?), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant112_c35fd34f89cdc8cc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant6, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant7, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant8, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant9, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant10, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11>?), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant11_25e5ab2e89a9dd12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant32, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant42, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant52, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant62, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant72, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant82, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant92, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant102, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant112>?), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant112_c6e649f9374e1209")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.AdminBot))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -852,7 +868,6 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatConversation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>), TypeInfoPropertyName = "ChatMessagePayloadVariant11_30375077cfc0820a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatMessagePayloadVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatMessagePayloadVariant1Type), TypeInfoPropertyName = "ChatMessagePayloadVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatMessagePayloadVariant2))]
@@ -934,7 +949,6 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetOrCreateConversationRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatAddParticipantRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>), TypeInfoPropertyName = "ChatCreateMessageRequestPayloadVideo_0e04a788e38dc6c9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageRequestPayloadAudio))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageRequestPayloadAudioType), TypeInfoPropertyName = "ChatCreateMessageRequestPayloadAudioType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageRequestPayloadCard))]
@@ -1023,7 +1037,6 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Botpress.ChatListMessagesResponseMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponseMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant11_a0e602ddc29f7a9b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponseMessagePayloadVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponseMessagePayloadVariant1Type), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant1Type2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponseMessagePayloadVariant2))]
@@ -1062,7 +1075,6 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Botpress.ChatListMessagesResponseMessage2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponseMessage2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant12, global::Botpress.ChatListMessagesResponseMessagePayloadVariant22, global::Botpress.ChatListMessagesResponseMessagePayloadVariant32, global::Botpress.ChatListMessagesResponseMessagePayloadVariant42, global::Botpress.ChatListMessagesResponseMessagePayloadVariant52, global::Botpress.ChatListMessagesResponseMessagePayloadVariant62, global::Botpress.ChatListMessagesResponseMessagePayloadVariant72, global::Botpress.ChatListMessagesResponseMessagePayloadVariant82, global::Botpress.ChatListMessagesResponseMessagePayloadVariant92, global::Botpress.ChatListMessagesResponseMessagePayloadVariant102, global::Botpress.ChatListMessagesResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant112_fbc5a859c12866df")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponseMessagePayloadVariant12))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponseMessagePayloadVariant1Type2), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant1Type22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatListMessagesResponseMessagePayloadVariant22))]
@@ -1118,7 +1130,6 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetParticipantResponseParticipant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant1, global::Botpress.ChatGetMessageResponseMessagePayloadVariant2, global::Botpress.ChatGetMessageResponseMessagePayloadVariant3, global::Botpress.ChatGetMessageResponseMessagePayloadVariant4, global::Botpress.ChatGetMessageResponseMessagePayloadVariant5, global::Botpress.ChatGetMessageResponseMessagePayloadVariant6, global::Botpress.ChatGetMessageResponseMessagePayloadVariant7, global::Botpress.ChatGetMessageResponseMessagePayloadVariant8, global::Botpress.ChatGetMessageResponseMessagePayloadVariant9, global::Botpress.ChatGetMessageResponseMessagePayloadVariant10, global::Botpress.ChatGetMessageResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant11_6555f8326b55cfad")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant1Type), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant1Type2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant2))]
@@ -1155,7 +1166,6 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant11Type), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant11Type2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessage2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant12, global::Botpress.ChatGetMessageResponseMessagePayloadVariant22, global::Botpress.ChatGetMessageResponseMessagePayloadVariant32, global::Botpress.ChatGetMessageResponseMessagePayloadVariant42, global::Botpress.ChatGetMessageResponseMessagePayloadVariant52, global::Botpress.ChatGetMessageResponseMessagePayloadVariant62, global::Botpress.ChatGetMessageResponseMessagePayloadVariant72, global::Botpress.ChatGetMessageResponseMessagePayloadVariant82, global::Botpress.ChatGetMessageResponseMessagePayloadVariant92, global::Botpress.ChatGetMessageResponseMessagePayloadVariant102, global::Botpress.ChatGetMessageResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant112_4f90c00d751ae5f5")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant12))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant1Type2), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant1Type22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant22))]
@@ -1181,6 +1191,711 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant62))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant6Type2), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant6Type22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant72))]
+    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+            typeof(global::Botpress.JsonConverters.AdminBotIntegrationsStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotIntegrationsStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotIntegrationsVisibilityJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotIntegrationsVisibilityNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotIntegrationsVerificationStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotIntegrationsVerificationStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotIntegrationsLifecycleStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotIntegrationsLifecycleStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotPluginsVisibilityJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotPluginsVisibilityNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotPluginsLifecycleStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotPluginsLifecycleStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotStatesTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotStatesTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminBotStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIntegrationStatesTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIntegrationStatesTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIntegrationVisibilityJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIntegrationVisibilityNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIntegrationVerificationStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIntegrationVerificationStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIntegrationLifecycleStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIntegrationLifecycleStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminPluginStatesTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminPluginStatesTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminPluginVisibilityJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminPluginVisibilityNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminPluginLifecycleStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminPluginLifecycleStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminWorkspaceBillingVersionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminWorkspaceBillingVersionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminWorkspacePlanJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminWorkspacePlanNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminWorkspaceMemberRoleJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminWorkspaceMemberRoleNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminUsageTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminUsageTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIssueCategoryJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminIssueCategoryNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminActivityCategoryJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminActivityCategoryNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant1TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant1TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant2ActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant2ActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant2TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant2TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant3ItemActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant3ItemActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant3TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant3TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant4TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant4TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant5TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant5TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant6TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant6TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant7TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant7TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant8TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant8TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant9TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant9TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant10TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant10TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant11TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatMessagePayloadVariant11TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesFileAccessPolicieJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesFileAccessPolicieNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesFileStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesFileStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesFileOwnerTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesFileOwnerTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesFileIndexingStackJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesFileIndexingStackNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeEventStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeEventStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeMessageDirectionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeMessageDirectionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeMessageOriginJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeMessageOriginNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeStateTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeStateTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeWorkflowStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeWorkflowStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesFormatJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesFormatNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesItemsTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesItemsTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesPropertiesTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesPropertiesTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesXZuiComputedActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaPropertiesXZuiComputedActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesTableSchemaTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesColumnTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesColumnTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesColumnComputedActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.TablesColumnComputedActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadAudioTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadAudioTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCardActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCardActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCardTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCardTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCarouselItemActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCarouselItemActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCarouselTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCarouselTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadChoiceTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadChoiceTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadDropdownTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadDropdownTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadFileTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadFileTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadImageTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadImageTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadLocationTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadLocationTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadMarkdownTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadMarkdownTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadTextTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadTextTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadVideoTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadVideoTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListPublicIntegrationsVerificationStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListPublicIntegrationsVerificationStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListPublicIntegrationsSortByJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListPublicIntegrationsSortByNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListPublicIntegrationsDirectionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListPublicIntegrationsDirectionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListBotsSortFieldJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListBotsSortFieldNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListBotsSortDirectionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListBotsSortDirectionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListIntegrationsVerificationStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListIntegrationsVerificationStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListIntegrationsSortByJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListIntegrationsSortByNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListIntegrationsDirectionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListIntegrationsDirectionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListIntegrationsVisibilityJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.AdminListIntegrationsVisibilityNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesListFilesSortFieldJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesListFilesSortFieldNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesListFilesSortDirectionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.FilesListFilesSortDirectionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListConversationsSortFieldJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListConversationsSortFieldNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListConversationsSortDirectionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListConversationsSortDirectionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListEventsStatusJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListEventsStatusNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListUsersRangeFieldJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListUsersRangeFieldNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListUsersSortFieldJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListUsersSortFieldNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListUsersSortDirectionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListUsersSortDirectionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeSetStateExpiryTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeSetStateExpiryTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeGetStateTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeGetStateTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeSetStateTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeSetStateTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimePatchStateTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimePatchStateTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeGetOrSetStateTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeGetOrSetStateTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListTagValuesTypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.RuntimeListTagValuesTypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant1TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant1TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2ActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2ActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant4TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant4TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant5TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant5TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant6TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant6TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant7TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant7TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant8TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant8TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant9TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant9TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant10TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant10TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant11TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant11TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant1Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant1Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2ActionAction2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2ActionAction2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionAction2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionAction2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant4Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant4Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant5Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant5Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant6Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant6Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant7Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant7Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant8Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant8Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant9Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant9Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant10Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant10Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant11Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant11Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant1TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant1TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2ActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2ActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3ItemActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3ItemActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant4TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant4TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant5TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant5TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant6TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant6TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant7TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant7TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant8TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant8TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant9TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant9TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant10TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant10TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant11TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant11TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant1Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant1Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2ActionAction2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2ActionAction2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3ItemActionAction2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3ItemActionAction2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant4Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant4Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant5Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant5Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant6Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant6Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant7Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant7Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant8Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant8Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant9Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant9Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant10Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant10Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant11Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant11Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant1TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant1TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2ActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2ActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3ItemActionActionJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3ItemActionActionNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant4TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant4TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant5TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant5TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant6TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant6TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant7TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant7TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant8TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant8TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant9TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant9TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant10TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant10TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant11TypeJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant11TypeNullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant1Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant1Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2ActionAction2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2ActionAction2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3ItemActionAction2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3ItemActionAction2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant4Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant4Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant5Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant5Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant6Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant6Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant7Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant7Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant8Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant8Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant9Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant9Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant10Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant10Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant11Type2JsonConverter),
+
+            typeof(global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant11Type2NullableJsonConverter),
+
+            typeof(global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>),
+
+            typeof(global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>),
+
+            typeof(global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>),
+
+            typeof(global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatListMessagesResponseMessagePayloadVariant12, global::Botpress.ChatListMessagesResponseMessagePayloadVariant22, global::Botpress.ChatListMessagesResponseMessagePayloadVariant32, global::Botpress.ChatListMessagesResponseMessagePayloadVariant42, global::Botpress.ChatListMessagesResponseMessagePayloadVariant52, global::Botpress.ChatListMessagesResponseMessagePayloadVariant62, global::Botpress.ChatListMessagesResponseMessagePayloadVariant72, global::Botpress.ChatListMessagesResponseMessagePayloadVariant82, global::Botpress.ChatListMessagesResponseMessagePayloadVariant92, global::Botpress.ChatListMessagesResponseMessagePayloadVariant102, global::Botpress.ChatListMessagesResponseMessagePayloadVariant112>),
+
+            typeof(global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatGetMessageResponseMessagePayloadVariant1, global::Botpress.ChatGetMessageResponseMessagePayloadVariant2, global::Botpress.ChatGetMessageResponseMessagePayloadVariant3, global::Botpress.ChatGetMessageResponseMessagePayloadVariant4, global::Botpress.ChatGetMessageResponseMessagePayloadVariant5, global::Botpress.ChatGetMessageResponseMessagePayloadVariant6, global::Botpress.ChatGetMessageResponseMessagePayloadVariant7, global::Botpress.ChatGetMessageResponseMessagePayloadVariant8, global::Botpress.ChatGetMessageResponseMessagePayloadVariant9, global::Botpress.ChatGetMessageResponseMessagePayloadVariant10, global::Botpress.ChatGetMessageResponseMessagePayloadVariant11>),
+
+            typeof(global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatGetMessageResponseMessagePayloadVariant12, global::Botpress.ChatGetMessageResponseMessagePayloadVariant22, global::Botpress.ChatGetMessageResponseMessagePayloadVariant32, global::Botpress.ChatGetMessageResponseMessagePayloadVariant42, global::Botpress.ChatGetMessageResponseMessagePayloadVariant52, global::Botpress.ChatGetMessageResponseMessagePayloadVariant62, global::Botpress.ChatGetMessageResponseMessagePayloadVariant72, global::Botpress.ChatGetMessageResponseMessagePayloadVariant82, global::Botpress.ChatGetMessageResponseMessagePayloadVariant92, global::Botpress.ChatGetMessageResponseMessagePayloadVariant102, global::Botpress.ChatGetMessageResponseMessagePayloadVariant112>),
+
+            typeof(global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant6, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant7, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant8, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant9, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant10, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11>),
+
+            typeof(global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant32, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant42, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant52, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant62, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant72, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant82, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant92, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant102, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant112>),
+
+            typeof(global::Botpress.JsonConverters.UnixTimestampJsonConverter),
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>), TypeInfoPropertyName = "ChatMessagePayloadVariant11_30375077cfc0820a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>), TypeInfoPropertyName = "ChatCreateMessageRequestPayloadVideo_0e04a788e38dc6c9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant11_a0e602ddc29f7a9b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant12, global::Botpress.ChatListMessagesResponseMessagePayloadVariant22, global::Botpress.ChatListMessagesResponseMessagePayloadVariant32, global::Botpress.ChatListMessagesResponseMessagePayloadVariant42, global::Botpress.ChatListMessagesResponseMessagePayloadVariant52, global::Botpress.ChatListMessagesResponseMessagePayloadVariant62, global::Botpress.ChatListMessagesResponseMessagePayloadVariant72, global::Botpress.ChatListMessagesResponseMessagePayloadVariant82, global::Botpress.ChatListMessagesResponseMessagePayloadVariant92, global::Botpress.ChatListMessagesResponseMessagePayloadVariant102, global::Botpress.ChatListMessagesResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant112_fbc5a859c12866df")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant1, global::Botpress.ChatGetMessageResponseMessagePayloadVariant2, global::Botpress.ChatGetMessageResponseMessagePayloadVariant3, global::Botpress.ChatGetMessageResponseMessagePayloadVariant4, global::Botpress.ChatGetMessageResponseMessagePayloadVariant5, global::Botpress.ChatGetMessageResponseMessagePayloadVariant6, global::Botpress.ChatGetMessageResponseMessagePayloadVariant7, global::Botpress.ChatGetMessageResponseMessagePayloadVariant8, global::Botpress.ChatGetMessageResponseMessagePayloadVariant9, global::Botpress.ChatGetMessageResponseMessagePayloadVariant10, global::Botpress.ChatGetMessageResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant11_6555f8326b55cfad")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant12, global::Botpress.ChatGetMessageResponseMessagePayloadVariant22, global::Botpress.ChatGetMessageResponseMessagePayloadVariant32, global::Botpress.ChatGetMessageResponseMessagePayloadVariant42, global::Botpress.ChatGetMessageResponseMessagePayloadVariant52, global::Botpress.ChatGetMessageResponseMessagePayloadVariant62, global::Botpress.ChatGetMessageResponseMessagePayloadVariant72, global::Botpress.ChatGetMessageResponseMessagePayloadVariant82, global::Botpress.ChatGetMessageResponseMessagePayloadVariant92, global::Botpress.ChatGetMessageResponseMessagePayloadVariant102, global::Botpress.ChatGetMessageResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant112_4f90c00d751ae5f5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant6, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant7, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant8, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant9, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant10, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant11_bb7acc1a28a0e3f0")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant32, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant42, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant52, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant62, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant72, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant82, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant92, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant102, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant112_7859003751ea8545")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>?), TypeInfoPropertyName = "ChatMessagePayloadVariant11_fc3629e5012e3e3f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>?), TypeInfoPropertyName = "ChatCreateMessageRequestPayloadVideo_2e32a376597eae8c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>?), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant11_9c99b3d4766ccd23")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant12, global::Botpress.ChatListMessagesResponseMessagePayloadVariant22, global::Botpress.ChatListMessagesResponseMessagePayloadVariant32, global::Botpress.ChatListMessagesResponseMessagePayloadVariant42, global::Botpress.ChatListMessagesResponseMessagePayloadVariant52, global::Botpress.ChatListMessagesResponseMessagePayloadVariant62, global::Botpress.ChatListMessagesResponseMessagePayloadVariant72, global::Botpress.ChatListMessagesResponseMessagePayloadVariant82, global::Botpress.ChatListMessagesResponseMessagePayloadVariant92, global::Botpress.ChatListMessagesResponseMessagePayloadVariant102, global::Botpress.ChatListMessagesResponseMessagePayloadVariant112>?), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant112_1606bd8d3b87ff35")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant1, global::Botpress.ChatGetMessageResponseMessagePayloadVariant2, global::Botpress.ChatGetMessageResponseMessagePayloadVariant3, global::Botpress.ChatGetMessageResponseMessagePayloadVariant4, global::Botpress.ChatGetMessageResponseMessagePayloadVariant5, global::Botpress.ChatGetMessageResponseMessagePayloadVariant6, global::Botpress.ChatGetMessageResponseMessagePayloadVariant7, global::Botpress.ChatGetMessageResponseMessagePayloadVariant8, global::Botpress.ChatGetMessageResponseMessagePayloadVariant9, global::Botpress.ChatGetMessageResponseMessagePayloadVariant10, global::Botpress.ChatGetMessageResponseMessagePayloadVariant11>?), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant11_3d3d49279ce79c7a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatGetMessageResponseMessagePayloadVariant12, global::Botpress.ChatGetMessageResponseMessagePayloadVariant22, global::Botpress.ChatGetMessageResponseMessagePayloadVariant32, global::Botpress.ChatGetMessageResponseMessagePayloadVariant42, global::Botpress.ChatGetMessageResponseMessagePayloadVariant52, global::Botpress.ChatGetMessageResponseMessagePayloadVariant62, global::Botpress.ChatGetMessageResponseMessagePayloadVariant72, global::Botpress.ChatGetMessageResponseMessagePayloadVariant82, global::Botpress.ChatGetMessageResponseMessagePayloadVariant92, global::Botpress.ChatGetMessageResponseMessagePayloadVariant102, global::Botpress.ChatGetMessageResponseMessagePayloadVariant112>?), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant112_c35fd34f89cdc8cc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant6, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant7, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant8, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant9, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant10, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11>?), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant11_25e5ab2e89a9dd12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant32, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant42, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant52, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant62, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant72, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant82, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant92, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant102, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant112>?), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant112_c6e649f9374e1209")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant7Type2), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant7Type22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant82))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatGetMessageResponseMessagePayloadVariant8Type2), TypeInfoPropertyName = "ChatGetMessageResponseMessagePayloadVariant8Type22")]
@@ -1194,7 +1909,6 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatDeleteMessageResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant6, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant7, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant8, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant9, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant10, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant11_bb7acc1a28a0e3f0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1Type), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant1Type2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2))]
@@ -1231,7 +1945,6 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11Type), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant11Type2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessage2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant32, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant42, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant52, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant62, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant72, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant82, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant92, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant102, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant112>), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant112_7859003751ea8545")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1Type2), TypeInfoPropertyName = "ChatCreateMessageResponseMessagePayloadVariant1Type22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22))]
@@ -1341,7 +2054,389 @@ namespace Botpress
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3ItemAction2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4Option2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5Option2>))]
+    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
+            SourceGenerationContextChunk0.Default,
+
+            SourceGenerationContextChunk1.Default
+            );
+
+        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SourceGenerationContext Default { get; } = new(DefaultOptions);
+
+        private SourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
+            : base(options)
+        {
+        }
+
+        /// <inheritdoc />
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
+
+        /// <inheritdoc />
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
+        {
+            return Resolver.GetTypeInfo(type, Options);
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotIntegrationsStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotIntegrationsStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotIntegrationsVisibilityJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotIntegrationsVisibilityNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotIntegrationsVerificationStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotIntegrationsVerificationStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotIntegrationsLifecycleStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotIntegrationsLifecycleStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotPluginsVisibilityJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotPluginsVisibilityNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotPluginsLifecycleStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotPluginsLifecycleStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotStatesTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotStatesTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminBotStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIntegrationStatesTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIntegrationStatesTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIntegrationVisibilityJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIntegrationVisibilityNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIntegrationVerificationStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIntegrationVerificationStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIntegrationLifecycleStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIntegrationLifecycleStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminPluginStatesTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminPluginStatesTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminPluginVisibilityJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminPluginVisibilityNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminPluginLifecycleStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminPluginLifecycleStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminWorkspaceBillingVersionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminWorkspaceBillingVersionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminWorkspacePlanJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminWorkspacePlanNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminWorkspaceMemberRoleJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminWorkspaceMemberRoleNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminUsageTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminUsageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIssueCategoryJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminIssueCategoryNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminActivityCategoryJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminActivityCategoryNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant2ActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant2ActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant3ItemActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant3ItemActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant3TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant3TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant4TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant4TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant5TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant5TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant6TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant6TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant7TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant7TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant8TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant8TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant9TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant9TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant10TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant10TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant11TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatMessagePayloadVariant11TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesFileAccessPolicieJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesFileAccessPolicieNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesFileStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesFileStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesFileOwnerTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesFileOwnerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesFileIndexingStackJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesFileIndexingStackNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeEventStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeMessageDirectionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeMessageDirectionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeMessageOriginJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeMessageOriginNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeStateTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeStateTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeWorkflowStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeWorkflowStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesFormatJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesFormatNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesItemsTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesItemsTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesPropertiesTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesPropertiesTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesXZuiComputedActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaPropertiesXZuiComputedActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesTableSchemaTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesColumnTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesColumnTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesColumnComputedActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.TablesColumnComputedActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadAudioTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadAudioTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCardActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCardActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCardTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCardTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCarouselItemActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCarouselItemActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCarouselTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadCarouselTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadChoiceTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadChoiceTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadDropdownTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadDropdownTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadFileTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadFileTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadImageTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadImageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadLocationTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadLocationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadMarkdownTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadMarkdownTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadTextTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadTextTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadVideoTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageRequestPayloadVideoTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListPublicIntegrationsVerificationStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListPublicIntegrationsVerificationStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListPublicIntegrationsSortByJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListPublicIntegrationsSortByNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListPublicIntegrationsDirectionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListPublicIntegrationsDirectionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListBotsSortFieldJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListBotsSortFieldNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListBotsSortDirectionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListBotsSortDirectionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListIntegrationsVerificationStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListIntegrationsVerificationStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListIntegrationsSortByJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListIntegrationsSortByNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListIntegrationsDirectionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListIntegrationsDirectionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListIntegrationsVisibilityJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.AdminListIntegrationsVisibilityNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesListFilesSortFieldJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesListFilesSortFieldNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesListFilesSortDirectionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.FilesListFilesSortDirectionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListConversationsSortFieldJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListConversationsSortFieldNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListConversationsSortDirectionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListConversationsSortDirectionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListEventsStatusJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListEventsStatusNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListUsersRangeFieldJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListUsersRangeFieldNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListUsersSortFieldJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListUsersSortFieldNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListUsersSortDirectionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListUsersSortDirectionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeSetStateExpiryTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeSetStateExpiryTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeGetStateTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeGetStateTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeSetStateTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeSetStateTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimePatchStateTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimePatchStateTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeGetOrSetStateTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeGetOrSetStateTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListTagValuesTypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.RuntimeListTagValuesTypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2ActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2ActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant4TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant4TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant5TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant5TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant6TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant6TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant7TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant7TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant8TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant8TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant9TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant9TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant10TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant10TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant11TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant11TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant1Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant1Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2ActionAction2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2ActionAction2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant2Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionAction2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionAction2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant4Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant4Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant5Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant5Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant6Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant6Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant7Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant7Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant8Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant8Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant9Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant9Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant10Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant10Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant11Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant11Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2ActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2ActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3ItemActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3ItemActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant4TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant4TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant5TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant5TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant6TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant6TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant7TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant7TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant8TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant8TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant9TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant9TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant10TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant10TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant11TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant11TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant1Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant1Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2ActionAction2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2ActionAction2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant2Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3ItemActionAction2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3ItemActionAction2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant3Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant4Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant4Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant5Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant5Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant6Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant6Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant7Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant7Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant8Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant8Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant9Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant9Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant10Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant10Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant11Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatGetMessageResponseMessagePayloadVariant11Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2ActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2ActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3ItemActionActionJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3ItemActionActionNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant4TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant4TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant5TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant5TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant6TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant6TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant7TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant7TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant8TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant8TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant9TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant9TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant10TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant10TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant11TypeJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant11TypeNullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant1Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant1Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2ActionAction2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2ActionAction2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant2Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3ItemActionAction2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3ItemActionAction2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant3Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant4Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant4Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant5Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant5Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant6Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant6Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant7Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant7Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant8Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant8Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant9Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant9Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant10Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant10Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant11Type2JsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.ChatCreateMessageResponseMessagePayloadVariant11Type2NullableJsonConverter());
+            options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>());
+            options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>());
+            options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>());
+            options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatListMessagesResponseMessagePayloadVariant12, global::Botpress.ChatListMessagesResponseMessagePayloadVariant22, global::Botpress.ChatListMessagesResponseMessagePayloadVariant32, global::Botpress.ChatListMessagesResponseMessagePayloadVariant42, global::Botpress.ChatListMessagesResponseMessagePayloadVariant52, global::Botpress.ChatListMessagesResponseMessagePayloadVariant62, global::Botpress.ChatListMessagesResponseMessagePayloadVariant72, global::Botpress.ChatListMessagesResponseMessagePayloadVariant82, global::Botpress.ChatListMessagesResponseMessagePayloadVariant92, global::Botpress.ChatListMessagesResponseMessagePayloadVariant102, global::Botpress.ChatListMessagesResponseMessagePayloadVariant112>());
+            options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatGetMessageResponseMessagePayloadVariant1, global::Botpress.ChatGetMessageResponseMessagePayloadVariant2, global::Botpress.ChatGetMessageResponseMessagePayloadVariant3, global::Botpress.ChatGetMessageResponseMessagePayloadVariant4, global::Botpress.ChatGetMessageResponseMessagePayloadVariant5, global::Botpress.ChatGetMessageResponseMessagePayloadVariant6, global::Botpress.ChatGetMessageResponseMessagePayloadVariant7, global::Botpress.ChatGetMessageResponseMessagePayloadVariant8, global::Botpress.ChatGetMessageResponseMessagePayloadVariant9, global::Botpress.ChatGetMessageResponseMessagePayloadVariant10, global::Botpress.ChatGetMessageResponseMessagePayloadVariant11>());
+            options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatGetMessageResponseMessagePayloadVariant12, global::Botpress.ChatGetMessageResponseMessagePayloadVariant22, global::Botpress.ChatGetMessageResponseMessagePayloadVariant32, global::Botpress.ChatGetMessageResponseMessagePayloadVariant42, global::Botpress.ChatGetMessageResponseMessagePayloadVariant52, global::Botpress.ChatGetMessageResponseMessagePayloadVariant62, global::Botpress.ChatGetMessageResponseMessagePayloadVariant72, global::Botpress.ChatGetMessageResponseMessagePayloadVariant82, global::Botpress.ChatGetMessageResponseMessagePayloadVariant92, global::Botpress.ChatGetMessageResponseMessagePayloadVariant102, global::Botpress.ChatGetMessageResponseMessagePayloadVariant112>());
+            options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant6, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant7, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant8, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant9, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant10, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11>());
+            options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant32, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant42, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant52, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant62, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant72, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant82, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant92, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant102, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant112>());
+            options.Converters.Add(new global::Botpress.JsonConverters.UnixTimestampJsonConverter());
+
+            return options;
+        }
     }
 }
