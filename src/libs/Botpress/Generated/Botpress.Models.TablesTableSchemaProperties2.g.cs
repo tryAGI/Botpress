@@ -123,5 +123,6 @@ namespace Botpress
         public TablesTableSchemaProperties2()
         {
         }
+
     }
 }

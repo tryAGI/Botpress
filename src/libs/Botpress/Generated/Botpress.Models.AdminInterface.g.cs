@@ -212,5 +212,6 @@ namespace Botpress
         public AdminInterface()
         {
         }
+
     }
 }

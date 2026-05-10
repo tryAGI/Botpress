@@ -42,5 +42,6 @@ namespace Botpress
         public ChatAddParticipantRequest()
         {
         }
+
     }
 }

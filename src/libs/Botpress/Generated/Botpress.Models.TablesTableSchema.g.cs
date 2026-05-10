@@ -84,5 +84,6 @@ namespace Botpress
         public TablesTableSchema()
         {
         }
+
     }
 }

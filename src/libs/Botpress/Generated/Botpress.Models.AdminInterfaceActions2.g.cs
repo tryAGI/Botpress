@@ -101,5 +101,6 @@ namespace Botpress
         public AdminInterfaceActions2()
         {
         }
+
     }
 }

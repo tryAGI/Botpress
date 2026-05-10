@@ -66,5 +66,6 @@ namespace Botpress
         public AdminBotStates2()
         {
         }
+
     }
 }

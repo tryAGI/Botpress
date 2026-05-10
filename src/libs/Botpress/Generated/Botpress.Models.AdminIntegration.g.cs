@@ -376,5 +376,6 @@ namespace Botpress
         public AdminIntegration()
         {
         }
+
     }
 }

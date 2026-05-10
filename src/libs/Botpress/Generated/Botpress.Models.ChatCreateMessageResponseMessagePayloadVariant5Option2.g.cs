@@ -50,5 +50,6 @@ namespace Botpress
         public ChatCreateMessageResponseMessagePayloadVariant5Option2()
         {
         }
+
     }
 }

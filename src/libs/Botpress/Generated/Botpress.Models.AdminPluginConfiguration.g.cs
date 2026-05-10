@@ -64,5 +64,6 @@ namespace Botpress
         public AdminPluginConfiguration()
         {
         }
+
     }
 }

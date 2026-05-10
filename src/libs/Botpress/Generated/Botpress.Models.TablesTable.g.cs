@@ -143,5 +143,6 @@ namespace Botpress
         public TablesTable()
         {
         }
+
     }
 }

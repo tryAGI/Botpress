@@ -52,5 +52,6 @@ namespace Botpress
         public AdminIntegrationUserTags2()
         {
         }
+
     }
 }

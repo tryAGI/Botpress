@@ -130,5 +130,6 @@ namespace Botpress
         public AdminIssue()
         {
         }
+
     }
 }
