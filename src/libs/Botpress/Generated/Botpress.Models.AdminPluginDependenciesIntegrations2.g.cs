@@ -60,5 +60,6 @@ namespace Botpress
         public AdminPluginDependenciesIntegrations2()
         {
         }
+
     }
 }

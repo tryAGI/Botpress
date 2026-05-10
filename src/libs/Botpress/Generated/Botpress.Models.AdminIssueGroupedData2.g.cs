@@ -49,5 +49,6 @@ namespace Botpress
         public AdminIssueGroupedData2()
         {
         }
+
     }
 }

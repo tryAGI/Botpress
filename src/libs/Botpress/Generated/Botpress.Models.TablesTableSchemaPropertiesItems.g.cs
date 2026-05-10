@@ -41,5 +41,6 @@ namespace Botpress
         public TablesTableSchemaPropertiesItems()
         {
         }
+
     }
 }

@@ -90,5 +90,6 @@ namespace Botpress
         public ChatEvent()
         {
         }
+
     }
 }

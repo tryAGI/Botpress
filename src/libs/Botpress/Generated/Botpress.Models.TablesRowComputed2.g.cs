@@ -67,5 +67,6 @@ namespace Botpress
         public TablesRowComputed2()
         {
         }
+
     }
 }

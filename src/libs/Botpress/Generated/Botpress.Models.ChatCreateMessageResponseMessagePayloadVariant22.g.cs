@@ -78,5 +78,6 @@ namespace Botpress
         public ChatCreateMessageResponseMessagePayloadVariant22()
         {
         }
+
     }
 }

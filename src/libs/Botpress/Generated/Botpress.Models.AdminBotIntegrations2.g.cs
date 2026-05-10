@@ -269,5 +269,6 @@ namespace Botpress
         public AdminBotIntegrations2()
         {
         }
+
     }
 }

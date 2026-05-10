@@ -194,5 +194,6 @@ namespace Botpress
         public RuntimeWorkflow()
         {
         }
+
     }
 }

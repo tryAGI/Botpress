@@ -69,5 +69,6 @@ namespace Botpress
         public AdminBotPluginsInterfaces2()
         {
         }
+
     }
 }

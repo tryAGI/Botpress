@@ -122,5 +122,6 @@ namespace Botpress
         public RuntimeUser()
         {
         }
+
     }
 }

@@ -59,5 +59,6 @@ namespace Botpress
         public ChatListMessagesResponseMessagePayloadVariant62()
         {
         }
+
     }
 }

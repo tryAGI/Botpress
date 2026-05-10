@@ -220,5 +220,6 @@ namespace Botpress
         public AdminBotPlugins2()
         {
         }
+
     }
 }

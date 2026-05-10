@@ -98,5 +98,6 @@ namespace Botpress
         public AdminWorkspaceMember()
         {
         }
+
     }
 }

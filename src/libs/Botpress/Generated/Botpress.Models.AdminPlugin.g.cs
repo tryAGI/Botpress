@@ -277,5 +277,6 @@ namespace Botpress
         public AdminPlugin()
         {
         }
+
     }
 }

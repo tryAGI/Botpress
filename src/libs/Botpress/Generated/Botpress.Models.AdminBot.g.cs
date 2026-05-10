@@ -339,5 +339,6 @@ namespace Botpress
         public AdminBot()
         {
         }
+
     }
 }
