@@ -68,5 +68,6 @@ namespace Botpress
         public ChatGetMessageResponseMessagePayloadVariant3Item()
         {
         }
+
     }
 }

@@ -49,5 +49,6 @@ namespace Botpress
         public AdminIssueEventData2()
         {
         }
+
     }
 }

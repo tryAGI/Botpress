@@ -55,5 +55,6 @@ namespace Botpress
         public AdminIntegrationStates2()
         {
         }
+
     }
 }

@@ -54,5 +54,6 @@ namespace Botpress
         public ChatCreateEventRequest()
         {
         }
+
     }
 }

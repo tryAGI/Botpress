@@ -50,5 +50,6 @@ namespace Botpress
         public ChatMessagePayloadVariant4Option()
         {
         }
+
     }
 }

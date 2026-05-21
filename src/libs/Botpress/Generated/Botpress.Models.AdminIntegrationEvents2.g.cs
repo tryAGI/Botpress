@@ -73,5 +73,6 @@ namespace Botpress
         public AdminIntegrationEvents2()
         {
         }
+
     }
 }

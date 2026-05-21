@@ -40,5 +40,6 @@ namespace Botpress
         public ChatCreateEventResponse2()
         {
         }
+
     }
 }

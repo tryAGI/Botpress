@@ -151,5 +151,6 @@ namespace Botpress
         public RuntimeMessage()
         {
         }
+
     }
 }

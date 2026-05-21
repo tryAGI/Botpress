@@ -86,5 +86,6 @@ namespace Botpress
         public AdminIntegrationChannels2()
         {
         }
+
     }
 }

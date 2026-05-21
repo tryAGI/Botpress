@@ -41,5 +41,6 @@ namespace Botpress
         public ChatListMessagesResponseMeta2()
         {
         }
+
     }
 }

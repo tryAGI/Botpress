@@ -99,5 +99,6 @@ namespace Botpress
         public ChatCreateUserResponseUser()
         {
         }
+
     }
 }

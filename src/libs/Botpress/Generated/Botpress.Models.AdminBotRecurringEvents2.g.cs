@@ -83,5 +83,6 @@ namespace Botpress
         public AdminBotRecurringEvents2()
         {
         }
+
     }
 }

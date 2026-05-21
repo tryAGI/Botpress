@@ -78,5 +78,6 @@ namespace Botpress
         public ChatMessagePayloadVariant2()
         {
         }
+
     }
 }

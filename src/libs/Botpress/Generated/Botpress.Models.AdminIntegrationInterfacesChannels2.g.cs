@@ -40,5 +40,6 @@ namespace Botpress
         public AdminIntegrationInterfacesChannels2()
         {
         }
+
     }
 }

@@ -63,5 +63,6 @@ namespace Botpress
         public ChatUpdateUserRequest()
         {
         }
+
     }
 }

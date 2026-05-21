@@ -76,5 +76,6 @@ namespace Botpress
         public AdminIntegrationConfigurations2()
         {
         }
+
     }
 }

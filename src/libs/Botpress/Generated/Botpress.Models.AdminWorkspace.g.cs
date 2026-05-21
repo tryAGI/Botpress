@@ -206,5 +206,6 @@ namespace Botpress
         public AdminWorkspace()
         {
         }
+
     }
 }
