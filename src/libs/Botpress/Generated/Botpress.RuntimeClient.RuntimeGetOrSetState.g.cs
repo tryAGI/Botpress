@@ -136,7 +136,7 @@ namespace Botpress
             {
 
                             var __pathBuilder = new global::Botpress.PathBuilder(
-                                path: $"/v1/chat/states/{type}/{id}/{name}/get-or-set",
+                                path: $"/v1/chat/states/{(global::System.Uri.EscapeDataString(type.ToValueString()))}/{id}/{name}/get-or-set",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::Botpress.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -213,7 +213,7 @@ namespace Botpress
                             context: global::Botpress.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "RuntimeGetOrSetState",
                                 methodName: "RuntimeGetOrSetStateAsync",
-                                pathTemplate: "$\"/v1/chat/states/{type}/{id}/{name}/get-or-set\"",
+                                pathTemplate: "$\"/v1/chat/states/{(global::System.Uri.EscapeDataString(type.ToValueString()))}/{id}/{name}/get-or-set\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -247,7 +247,7 @@ namespace Botpress
                             context: global::Botpress.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "RuntimeGetOrSetState",
                                 methodName: "RuntimeGetOrSetStateAsync",
-                                pathTemplate: "$\"/v1/chat/states/{type}/{id}/{name}/get-or-set\"",
+                                pathTemplate: "$\"/v1/chat/states/{(global::System.Uri.EscapeDataString(type.ToValueString()))}/{id}/{name}/get-or-set\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -288,7 +288,7 @@ namespace Botpress
                             context: global::Botpress.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "RuntimeGetOrSetState",
                                 methodName: "RuntimeGetOrSetStateAsync",
-                                pathTemplate: "$\"/v1/chat/states/{type}/{id}/{name}/get-or-set\"",
+                                pathTemplate: "$\"/v1/chat/states/{(global::System.Uri.EscapeDataString(type.ToValueString()))}/{id}/{name}/get-or-set\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -336,7 +336,7 @@ namespace Botpress
                             context: global::Botpress.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "RuntimeGetOrSetState",
                                 methodName: "RuntimeGetOrSetStateAsync",
-                                pathTemplate: "$\"/v1/chat/states/{type}/{id}/{name}/get-or-set\"",
+                                pathTemplate: "$\"/v1/chat/states/{(global::System.Uri.EscapeDataString(type.ToValueString()))}/{id}/{name}/get-or-set\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -358,7 +358,7 @@ namespace Botpress
                             context: global::Botpress.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "RuntimeGetOrSetState",
                                 methodName: "RuntimeGetOrSetStateAsync",
-                                pathTemplate: "$\"/v1/chat/states/{type}/{id}/{name}/get-or-set\"",
+                                pathTemplate: "$\"/v1/chat/states/{(global::System.Uri.EscapeDataString(type.ToValueString()))}/{id}/{name}/get-or-set\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
