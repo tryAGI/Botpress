@@ -30,6 +30,13 @@ await client.Runtime.RuntimeListConversationsAsync(xBotId: "your-bot-id");
 await client.Tables.TablesListTablesAsync(xBotId: "your-bot-id");
 ```
 
+### CLI
+
+```bash
+dotnet tool install --global Botpress.CLI --prerelease
+botpress api --help
+```
+
 <!-- EXAMPLES:START -->
 <!-- EXAMPLES:END -->
 

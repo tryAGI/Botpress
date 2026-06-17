@@ -39,3 +39,21 @@ autosdk generate openapi.json \
   --output Generated \
   --exclude-deprecated-operations \
   --security-scheme Http:Header:Bearer
+
+rm -rf ../../cli/Botpress.CLI
+
+autosdk cli-project openapi.json \
+  --output ../../cli/Botpress.CLI \
+  --sdk-project ../../libs/Botpress/Botpress.csproj \
+  --targetFramework net10.0 \
+  --namespace Botpress \
+  --clientClassName BotpressClient \
+  --package-id Botpress.CLI \
+  --tool-command-name botpress \
+  --user-secrets-id Botpress.CLI \
+  --api-key-env-var BOTPRESS_API_KEY \
+  --base-url-env-var BOTPRESS_BASE_URL \
+  --cli-credential-file \
+  --cli-keep-api-group \
+  --exclude-deprecated-operations \
+  --security-scheme Http:Header:Bearer

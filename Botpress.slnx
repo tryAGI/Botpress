@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/cli/">
+    <Project Path="src/cli/Botpress.CLI/Botpress.CLI.csproj" />
+  </Folder>
   <Folder Name="/libs/">
     <File Path="src/libs/Directory.Build.props" />
     <Project Path="src/libs/Botpress/Botpress.csproj" />
