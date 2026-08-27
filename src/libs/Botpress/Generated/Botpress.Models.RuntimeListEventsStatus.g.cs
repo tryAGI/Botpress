@@ -4,7 +4,7 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RuntimeListEventsStatus
     {
@@ -25,7 +25,7 @@ namespace Botpress
         /// </summary>
         Processed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scheduled,
     }

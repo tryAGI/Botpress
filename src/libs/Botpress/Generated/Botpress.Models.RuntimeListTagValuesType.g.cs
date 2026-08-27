@@ -4,20 +4,20 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RuntimeListTagValuesType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Conversation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Message,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

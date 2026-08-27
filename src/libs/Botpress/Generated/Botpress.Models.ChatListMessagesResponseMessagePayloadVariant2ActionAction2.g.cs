@@ -4,20 +4,20 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatListMessagesResponseMessagePayloadVariant2ActionAction2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Postback,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Say,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
     }

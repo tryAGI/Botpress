@@ -145,7 +145,7 @@ namespace Botpress
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
 
             if (xMultipleIntegrations != default)
@@ -345,7 +345,7 @@ namespace Botpress
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
+                            //
                             if (!__response.IsSuccessStatusCode)
                             {
                                 string? __content_default = null;

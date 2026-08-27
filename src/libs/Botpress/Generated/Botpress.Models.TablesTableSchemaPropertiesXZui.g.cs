@@ -4,12 +4,12 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TablesTableSchemaPropertiesXZui
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("index")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -52,7 +52,7 @@ namespace Botpress
         public string? SchemaId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("computed")]
         public global::Botpress.TablesTableSchemaPropertiesXZuiComputed? Computed { get; set; }

@@ -9,23 +9,23 @@ namespace Botpress
     public enum RuntimeStateType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Conversation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflow,
     }

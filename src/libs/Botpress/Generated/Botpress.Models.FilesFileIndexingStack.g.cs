@@ -9,11 +9,11 @@ namespace Botpress
     public enum FilesFileIndexingStack
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V2,
     }

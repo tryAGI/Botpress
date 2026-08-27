@@ -9,15 +9,15 @@ namespace Botpress
     public enum AdminBotStatesType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Conversation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

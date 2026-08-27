@@ -4,12 +4,12 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatGetMessageResponseMessagePayloadVariant9Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Markdown,
     }

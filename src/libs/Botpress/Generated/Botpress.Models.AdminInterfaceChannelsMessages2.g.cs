@@ -9,7 +9,7 @@ namespace Botpress
     public sealed partial class AdminInterfaceChannelsMessages2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schema")]
         [global::System.Text.Json.Serialization.JsonRequired]

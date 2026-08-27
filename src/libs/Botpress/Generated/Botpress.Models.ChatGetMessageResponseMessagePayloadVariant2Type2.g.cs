@@ -4,12 +4,12 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatGetMessageResponseMessagePayloadVariant2Type2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Card,
     }

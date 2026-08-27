@@ -4,48 +4,48 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AdminActivityCategory
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Action,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Capture,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Event,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exception,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubtaskStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TaskStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMessage,
     }

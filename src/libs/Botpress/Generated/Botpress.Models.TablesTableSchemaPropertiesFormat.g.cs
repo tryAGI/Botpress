@@ -4,12 +4,12 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TablesTableSchemaPropertiesFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DateTime,
     }

@@ -9,7 +9,7 @@ namespace Botpress
     public enum RuntimeMessageOrigin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Synthetic,
     }

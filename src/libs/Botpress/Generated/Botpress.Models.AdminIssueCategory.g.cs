@@ -4,24 +4,24 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AdminIssueCategory
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Configuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Limits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserCode,
     }
