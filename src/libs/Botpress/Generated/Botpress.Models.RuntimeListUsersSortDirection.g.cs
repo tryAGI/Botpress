@@ -4,16 +4,16 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RuntimeListUsersSortDirection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

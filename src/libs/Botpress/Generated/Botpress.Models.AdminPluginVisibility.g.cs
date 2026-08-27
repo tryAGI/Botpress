@@ -9,15 +9,15 @@ namespace Botpress
     public enum AdminPluginVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unlisted,
     }

@@ -20,7 +20,7 @@ namespace Botpress.JsonConverters
                     {
                         return global::Botpress.TablesTableSchemaPropertiesPropertiesTypeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

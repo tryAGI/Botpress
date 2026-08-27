@@ -20,7 +20,7 @@ namespace Botpress.JsonConverters
                     {
                         return global::Botpress.ChatGetMessageResponseMessagePayloadVariant8TypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

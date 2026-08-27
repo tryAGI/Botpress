@@ -4,12 +4,12 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatListMessagesResponseMessagePayloadVariant3ItemAction2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Botpress.JsonConverters.ChatListMessagesResponseMessagePayloadVariant3ItemActionAction2JsonConverter))]
@@ -17,14 +17,14 @@ namespace Botpress
         public required global::Botpress.ChatListMessagesResponseMessagePayloadVariant3ItemActionAction2 Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("label")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Label { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]

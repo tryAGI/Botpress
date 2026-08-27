@@ -9,63 +9,63 @@ namespace Botpress
     public enum AdminUsageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiSpend,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlwaysAlive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BingSearchSpend,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileMaxSizeBytes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IndexedFileCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationsOwnedCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvocationCalls,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvocationTimeout,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KnowledgebaseVectorStorage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenaiSpend,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TableRowCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkspaceMemberCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkspaceRatelimit,
     }

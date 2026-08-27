@@ -4,7 +4,7 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TablesTable
     {
@@ -42,7 +42,7 @@ namespace Botpress
         public string? KeyColumn { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schema")]
         [global::System.Text.Json.Serialization.JsonRequired]

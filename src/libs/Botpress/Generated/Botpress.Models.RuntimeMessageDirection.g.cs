@@ -9,11 +9,11 @@ namespace Botpress
     public enum RuntimeMessageDirection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Incoming,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Outgoing,
     }

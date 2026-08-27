@@ -4,7 +4,7 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TablesColumn
     {
@@ -48,13 +48,13 @@ namespace Botpress
         public string? Typings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("computed")]
         public global::Botpress.TablesColumnComputed? Computed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schema")]
         public object? Schema { get; set; }

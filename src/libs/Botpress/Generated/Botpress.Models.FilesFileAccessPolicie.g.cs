@@ -4,16 +4,16 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FilesFileAccessPolicie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integrations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicContent,
     }

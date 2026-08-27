@@ -9,15 +9,15 @@ namespace Botpress
     public enum AdminIntegrationStatesType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Conversation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

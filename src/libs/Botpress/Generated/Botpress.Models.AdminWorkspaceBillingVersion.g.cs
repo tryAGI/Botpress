@@ -4,24 +4,24 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AdminWorkspaceBillingVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V4,
     }

@@ -4,12 +4,12 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatCreateMessageResponseMessagePayloadVariant8Type2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Location,
     }

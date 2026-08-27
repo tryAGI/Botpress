@@ -4,20 +4,20 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FilesFileOwnerType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

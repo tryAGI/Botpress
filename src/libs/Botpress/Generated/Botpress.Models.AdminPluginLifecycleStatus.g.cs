@@ -9,11 +9,11 @@ namespace Botpress
     public enum AdminPluginLifecycleStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deprecated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Published,
     }

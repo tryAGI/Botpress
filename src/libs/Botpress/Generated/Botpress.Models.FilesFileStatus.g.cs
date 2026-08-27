@@ -12,27 +12,27 @@ namespace Botpress
     public enum FilesFileStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IndexingCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IndexingFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IndexingPending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadPending,
     }

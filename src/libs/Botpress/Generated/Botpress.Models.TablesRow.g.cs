@@ -4,7 +4,7 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TablesRow
     {
@@ -28,7 +28,7 @@ namespace Botpress
         public global::System.DateTime? UpdatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("computed")]
         [global::System.Text.Json.Serialization.JsonRequired]

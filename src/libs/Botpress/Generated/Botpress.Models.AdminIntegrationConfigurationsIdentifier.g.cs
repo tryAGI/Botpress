@@ -9,13 +9,13 @@ namespace Botpress
     public sealed partial class AdminIntegrationConfigurationsIdentifier
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("linkTemplateScript")]
         public string? LinkTemplateScript { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("required")]
         [global::System.Text.Json.Serialization.JsonRequired]

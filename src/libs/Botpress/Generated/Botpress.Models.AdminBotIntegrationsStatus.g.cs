@@ -4,32 +4,32 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AdminBotIntegrationsStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Registered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RegistrationFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RegistrationPending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unregistered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnregistrationFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnregistrationPending,
     }

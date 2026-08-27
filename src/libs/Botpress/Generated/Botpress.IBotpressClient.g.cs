@@ -40,33 +40,33 @@ namespace Botpress
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AdminClient Admin { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatClient Chat { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FilesClient Files { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RuntimeClient Runtime { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TablesClient Tables { get; }
 

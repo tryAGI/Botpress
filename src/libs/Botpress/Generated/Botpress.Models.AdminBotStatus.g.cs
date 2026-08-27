@@ -9,15 +9,15 @@ namespace Botpress
     public enum AdminBotStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deleting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deploying,
     }

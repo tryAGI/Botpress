@@ -4,12 +4,12 @@
 namespace Botpress
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatListMessagesResponseMessagePayloadVariant4Type2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Choice,
     }
