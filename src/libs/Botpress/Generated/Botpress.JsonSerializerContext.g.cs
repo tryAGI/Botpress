@@ -882,6 +882,7 @@ namespace Botpress
     {
         private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
+
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
         /// <summary>
@@ -903,13 +904,8 @@ namespace Botpress
             return Resolver.GetTypeInfo(type, Options);
         }
 
-        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+         static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            var options = new global::System.Text.Json.JsonSerializerOptions
-            {
-                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-                TypeInfoResolver = Resolver,
-            };
             options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>());
             options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>());
             options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>());
@@ -919,8 +915,17 @@ namespace Botpress
             options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant1, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant2, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant3, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant4, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant5, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant6, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant7, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant8, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant9, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant10, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant11>());
             options.Converters.Add(new global::Botpress.JsonConverters.OneOfJsonConverter<global::Botpress.ChatCreateMessageResponseMessagePayloadVariant12, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant22, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant32, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant42, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant52, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant62, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant72, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant82, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant92, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant102, global::Botpress.ChatCreateMessageResponseMessagePayloadVariant112>());
             options.Converters.Add(new global::Botpress.JsonConverters.UnixTimestampJsonConverter());
-
             options.Converters.Add(new LazyEnumJsonConverterFactory());
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            AddConverters(options);
 
             return options;
         }
