@@ -50,6 +50,8 @@ internal static partial class FilesFilesUpdateFileMetadataCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"update-file-metadata", @"Update file metadata, without updating the file content.");
@@ -87,6 +89,7 @@ internal static partial class FilesFilesUpdateFileMetadataCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

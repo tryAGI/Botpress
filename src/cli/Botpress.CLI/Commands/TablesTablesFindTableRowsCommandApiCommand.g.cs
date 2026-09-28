@@ -50,6 +50,8 @@ internal static partial class TablesTablesFindTableRowsCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"find-table-rows", @"Enables the search and filtering of rows within a table based on specific criteria. This operation supports complex queries for advanced data manipulation and retrieval.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesFindTableRowsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

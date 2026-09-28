@@ -40,6 +40,8 @@ internal static partial class ChatChatGetEventCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-event", @"Get Event
@@ -69,6 +71,7 @@ Retrieves the [Event](#schema_event) object for a valid identifier.");
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

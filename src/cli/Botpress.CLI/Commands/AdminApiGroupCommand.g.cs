@@ -4,8 +4,10 @@ using System.CommandLine;
 
 namespace Botpress.CLI.Commands;
 
-internal static class AdminApiGroupCommand
+internal static partial class AdminApiGroupCommand
 {
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"admin", @"Admin endpoint commands.");
@@ -47,6 +49,7 @@ internal static class AdminApiGroupCommand
                          command.Subcommands.Add(AdminAdminUpdateWorkspaceMemberCommandApiCommand.Create());
                          command.Subcommands.Add(AdminAdminValidateIntegrationCreationCommandApiCommand.Create());
                          command.Subcommands.Add(AdminAdminValidateIntegrationUpdateCommandApiCommand.Create());
+        CustomizeCommand(ref command);
         return command;
     }
 }

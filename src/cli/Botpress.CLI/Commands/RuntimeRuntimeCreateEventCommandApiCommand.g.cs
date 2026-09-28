@@ -26,6 +26,8 @@ internal static partial class RuntimeRuntimeCreateEventCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"create-event", @"Creates a new [Event](#schema_event). When creating a new [Event](#schema_event), the required tags must be provided. See the specific integration for more details.");
@@ -51,6 +53,7 @@ internal static partial class RuntimeRuntimeCreateEventCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

@@ -50,6 +50,8 @@ internal static partial class FilesFilesListFileTagsCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-file-tags", @"List available tags");
@@ -87,6 +89,7 @@ internal static partial class FilesFilesListFileTagsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

@@ -45,6 +45,8 @@ internal static partial class RuntimeRuntimeListTagValuesCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-tag-values", @"Get a bot tag values");
@@ -79,6 +81,7 @@ internal static partial class RuntimeRuntimeListTagValuesCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

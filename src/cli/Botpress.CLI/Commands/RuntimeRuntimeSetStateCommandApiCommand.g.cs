@@ -44,6 +44,8 @@ internal static partial class RuntimeRuntimeSetStateCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"set-state", @"Overrides the [State](#schema_state) object by setting the values of the parameters passed.");
@@ -78,6 +80,7 @@ internal static partial class RuntimeRuntimeSetStateCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

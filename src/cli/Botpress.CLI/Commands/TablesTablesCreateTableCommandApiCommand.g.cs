@@ -44,6 +44,8 @@ internal static partial class TablesTablesCreateTableCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"create-table", @"Initiates the creation of a new table based on the provided schema, excluding system-managed fields like IDs and timestamps.");
@@ -78,6 +80,7 @@ internal static partial class TablesTablesCreateTableCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

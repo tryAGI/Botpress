@@ -50,6 +50,8 @@ internal static partial class TablesTablesDeleteTableCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"delete-table", @"Permanently deletes a table and all its associated data from the system. Use with caution, as this action cannot be undone.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesDeleteTableCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

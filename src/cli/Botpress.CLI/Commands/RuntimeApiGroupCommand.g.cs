@@ -4,8 +4,10 @@ using System.CommandLine;
 
 namespace Botpress.CLI.Commands;
 
-internal static class RuntimeApiGroupCommand
+internal static partial class RuntimeApiGroupCommand
 {
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"runtime", @"Runtime endpoint commands.");
@@ -43,6 +45,7 @@ internal static class RuntimeApiGroupCommand
                          command.Subcommands.Add(RuntimeRuntimeUpdateConversationCommandApiCommand.Create());
                          command.Subcommands.Add(RuntimeRuntimeUpdateMessageCommandApiCommand.Create());
                          command.Subcommands.Add(RuntimeRuntimeUpdateUserCommandApiCommand.Create());
+        CustomizeCommand(ref command);
         return command;
     }
 }

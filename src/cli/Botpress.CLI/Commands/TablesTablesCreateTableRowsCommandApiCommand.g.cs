@@ -50,6 +50,8 @@ internal static partial class TablesTablesCreateTableRowsCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"create-table-rows", @"Inserts one or multiple new rows into the specified table.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesCreateTableRowsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

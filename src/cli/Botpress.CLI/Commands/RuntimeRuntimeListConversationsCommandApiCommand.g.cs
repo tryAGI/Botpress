@@ -80,6 +80,8 @@ internal static partial class RuntimeRuntimeListConversationsCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-conversations", @"Retrieves a list of [Conversation](#schema_conversation) you’ve previously created. The conversations are returned in sorted order, with the most recent appearing first. The list can be filtered using [Tags](#tags).");
@@ -132,6 +134,7 @@ internal static partial class RuntimeRuntimeListConversationsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

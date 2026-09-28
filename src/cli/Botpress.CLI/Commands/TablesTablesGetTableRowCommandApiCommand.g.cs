@@ -57,6 +57,8 @@ internal static partial class TablesTablesGetTableRowCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-table-row", @"Fetches a specific row from a table using the row's unique identifier.");
@@ -97,6 +99,7 @@ internal static partial class TablesTablesGetTableRowCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

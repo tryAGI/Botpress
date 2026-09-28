@@ -68,6 +68,8 @@ internal static partial class RuntimeRuntimeListEventsCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-events", @"Retrieves a list of [Event](#schema_event) you’ve previously created. The events are returned in sorted order, with the most recent appearing first.");
@@ -114,6 +116,7 @@ internal static partial class RuntimeRuntimeListEventsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

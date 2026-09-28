@@ -26,6 +26,8 @@ internal static partial class RuntimeRuntimeConfigureIntegrationCommandApiComman
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"configure-integration", @"An integration can call this endpoint to configure itself");
@@ -51,6 +53,7 @@ internal static partial class RuntimeRuntimeConfigureIntegrationCommandApiComman
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

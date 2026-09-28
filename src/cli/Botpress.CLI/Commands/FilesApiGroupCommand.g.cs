@@ -4,8 +4,10 @@ using System.CommandLine;
 
 namespace Botpress.CLI.Commands;
 
-internal static class FilesApiGroupCommand
+internal static partial class FilesApiGroupCommand
 {
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"files", @"Files endpoint commands.");
@@ -19,6 +21,7 @@ internal static class FilesApiGroupCommand
                          command.Subcommands.Add(FilesFilesSearchFilesCommandApiCommand.Create());
                          command.Subcommands.Add(FilesFilesUpdateFileMetadataCommandApiCommand.Create());
                          command.Subcommands.Add(FilesFilesUpsertFileCommandApiCommand.Create());
+        CustomizeCommand(ref command);
         return command;
     }
 }

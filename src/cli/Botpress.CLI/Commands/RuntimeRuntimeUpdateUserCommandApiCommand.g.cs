@@ -32,6 +32,8 @@ internal static partial class RuntimeRuntimeUpdateUserCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"update-user", @"Update a [User](#schema_user) object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.");
@@ -60,6 +62,7 @@ internal static partial class RuntimeRuntimeUpdateUserCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

@@ -26,6 +26,8 @@ internal static partial class RuntimeRuntimeGetOrCreateMessageCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-or-create-message", @"Retrieves the [Message](#schema_message) object for given discriminating tags. If the message does not exist, it will be created. If the message already exists, its tags and payload will be updated with the provided values if they are defined.");
@@ -51,6 +53,7 @@ internal static partial class RuntimeRuntimeGetOrCreateMessageCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

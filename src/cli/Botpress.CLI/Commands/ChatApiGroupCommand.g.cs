@@ -4,8 +4,10 @@ using System.CommandLine;
 
 namespace Botpress.CLI.Commands;
 
-internal static class ChatApiGroupCommand
+internal static partial class ChatApiGroupCommand
 {
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"chat", @"Chat endpoint commands.");
@@ -30,6 +32,7 @@ internal static class ChatApiGroupCommand
                          command.Subcommands.Add(ChatChatListenConversationCommandApiCommand.Create());
                          command.Subcommands.Add(ChatChatRemoveParticipantCommandApiCommand.Create());
                          command.Subcommands.Add(ChatChatUpdateUserCommandApiCommand.Create());
+        CustomizeCommand(ref command);
         return command;
     }
 }

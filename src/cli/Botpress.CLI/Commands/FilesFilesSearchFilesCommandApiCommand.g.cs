@@ -81,6 +81,8 @@ internal static partial class FilesFilesSearchFilesCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"search-files", @"Search files");
@@ -136,6 +138,7 @@ internal static partial class FilesFilesSearchFilesCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

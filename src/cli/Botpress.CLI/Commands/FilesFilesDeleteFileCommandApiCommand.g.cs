@@ -50,6 +50,8 @@ internal static partial class FilesFilesDeleteFileCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"delete-file", @"Deletes a file.");
@@ -87,6 +89,7 @@ internal static partial class FilesFilesDeleteFileCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

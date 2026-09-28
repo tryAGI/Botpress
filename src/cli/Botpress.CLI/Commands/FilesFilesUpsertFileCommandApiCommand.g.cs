@@ -44,6 +44,8 @@ internal static partial class FilesFilesUpsertFileCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"upsert-file", @"Creates or updates a file using the `key` parameter as unique identifier. Updating a file will erase the existing content of the file. Upload the file content by sending it in a PUT request to the `uploadUrl` returned in the response.");
@@ -78,6 +80,7 @@ internal static partial class FilesFilesUpsertFileCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

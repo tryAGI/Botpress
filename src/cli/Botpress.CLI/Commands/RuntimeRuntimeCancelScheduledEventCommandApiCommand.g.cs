@@ -32,6 +32,8 @@ internal static partial class RuntimeRuntimeCancelScheduledEventCommandApiComman
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"cancel-scheduled-event", @"Permanently cancels a scheduled [Event](#schema_event). The event must be in a `scheduled` state.");
@@ -60,6 +62,7 @@ internal static partial class RuntimeRuntimeCancelScheduledEventCommandApiComman
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

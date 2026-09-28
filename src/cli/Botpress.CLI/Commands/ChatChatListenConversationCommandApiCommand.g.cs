@@ -40,6 +40,8 @@ internal static partial class ChatChatListenConversationCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"listen-conversation", @"Listen Conversation
@@ -69,6 +71,7 @@ Creates a SSE stream to receive messages and events from a conversation");
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

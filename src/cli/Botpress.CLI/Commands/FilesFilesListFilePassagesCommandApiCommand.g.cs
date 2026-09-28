@@ -62,6 +62,8 @@ internal static partial class FilesFilesListFilePassagesCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-file-passages", @"List passages for a file");
@@ -105,6 +107,7 @@ internal static partial class FilesFilesListFilePassagesCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

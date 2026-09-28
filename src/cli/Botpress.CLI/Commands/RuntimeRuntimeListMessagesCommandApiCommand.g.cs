@@ -56,6 +56,8 @@ internal static partial class RuntimeRuntimeListMessagesCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-messages", @"Retrieves a list of [Message](#schema_message) you’ve previously created. The messages are returned in sorted order, with the most recent appearing first. The list can be filtered using [Tags](/docs/developers/concepts/tags).");
@@ -96,6 +98,7 @@ internal static partial class RuntimeRuntimeListMessagesCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

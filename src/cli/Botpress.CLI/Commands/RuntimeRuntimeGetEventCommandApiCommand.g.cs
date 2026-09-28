@@ -32,6 +32,8 @@ internal static partial class RuntimeRuntimeGetEventCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-event", @"Retrieves the [Event](#schema_event) object for a valid identifiers.");
@@ -60,6 +62,7 @@ internal static partial class RuntimeRuntimeGetEventCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

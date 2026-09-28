@@ -4,8 +4,10 @@ using System.CommandLine;
 
 namespace Botpress.CLI.Commands;
 
-internal static class TablesApiGroupCommand
+internal static partial class TablesApiGroupCommand
 {
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"tables", @"Tables endpoint commands.");
@@ -23,6 +25,7 @@ internal static class TablesApiGroupCommand
                          command.Subcommands.Add(TablesTablesUpdateTableCommandApiCommand.Create());
                          command.Subcommands.Add(TablesTablesUpdateTableRowsCommandApiCommand.Create());
                          command.Subcommands.Add(TablesTablesUpsertTableRowsCommandApiCommand.Create());
+        CustomizeCommand(ref command);
         return command;
     }
 }
