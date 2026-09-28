@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace Botpress
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>), TypeInfoPropertyName = "ChatMessagePayloadVariant11_30375077cfc0820a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>), TypeInfoPropertyName = "ChatCreateMessageRequestPayloadVideo_0e04a788e38dc6c9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant11_a0e602ddc29f7a9b")]
@@ -522,10 +517,8 @@ namespace Botpress
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatMessagePayloadVariant1, global::Botpress.ChatMessagePayloadVariant2, global::Botpress.ChatMessagePayloadVariant3, global::Botpress.ChatMessagePayloadVariant4, global::Botpress.ChatMessagePayloadVariant5, global::Botpress.ChatMessagePayloadVariant6, global::Botpress.ChatMessagePayloadVariant7, global::Botpress.ChatMessagePayloadVariant8, global::Botpress.ChatMessagePayloadVariant9, global::Botpress.ChatMessagePayloadVariant10, global::Botpress.ChatMessagePayloadVariant11>), TypeInfoPropertyName = "ChatMessagePayloadVariant11_30375077cfc0820a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatCreateMessageRequestPayloadAudio, global::Botpress.ChatCreateMessageRequestPayloadCard, global::Botpress.ChatCreateMessageRequestPayloadCarousel, global::Botpress.ChatCreateMessageRequestPayloadChoice, global::Botpress.ChatCreateMessageRequestPayloadDropdown, global::Botpress.ChatCreateMessageRequestPayloadFile, global::Botpress.ChatCreateMessageRequestPayloadImage, global::Botpress.ChatCreateMessageRequestPayloadLocation, global::Botpress.ChatCreateMessageRequestPayloadMarkdown, global::Botpress.ChatCreateMessageRequestPayloadText, global::Botpress.ChatCreateMessageRequestPayloadVideo>), TypeInfoPropertyName = "ChatCreateMessageRequestPayloadVideo_0e04a788e38dc6c9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Botpress.OneOf<global::Botpress.ChatListMessagesResponseMessagePayloadVariant1, global::Botpress.ChatListMessagesResponseMessagePayloadVariant2, global::Botpress.ChatListMessagesResponseMessagePayloadVariant3, global::Botpress.ChatListMessagesResponseMessagePayloadVariant4, global::Botpress.ChatListMessagesResponseMessagePayloadVariant5, global::Botpress.ChatListMessagesResponseMessagePayloadVariant6, global::Botpress.ChatListMessagesResponseMessagePayloadVariant7, global::Botpress.ChatListMessagesResponseMessagePayloadVariant8, global::Botpress.ChatListMessagesResponseMessagePayloadVariant9, global::Botpress.ChatListMessagesResponseMessagePayloadVariant10, global::Botpress.ChatListMessagesResponseMessagePayloadVariant11>), TypeInfoPropertyName = "ChatListMessagesResponseMessagePayloadVariant11_a0e602ddc29f7a9b")]
