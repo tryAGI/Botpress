@@ -32,6 +32,8 @@ internal static partial class RuntimeRuntimeDeleteUserCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"delete-user", @"Permanently deletes a [User](#schema_user). It cannot be undone.");
@@ -60,6 +62,7 @@ internal static partial class RuntimeRuntimeDeleteUserCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

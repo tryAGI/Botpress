@@ -46,6 +46,8 @@ internal static partial class ChatChatListParticipantsCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-participants", @"List Participants
@@ -86,6 +88,7 @@ Retrieves a list of [Participants](#schema_user) for a given [Conversation](#sch
                                     cancellationToken).ConfigureAwait(false);
                                 }
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

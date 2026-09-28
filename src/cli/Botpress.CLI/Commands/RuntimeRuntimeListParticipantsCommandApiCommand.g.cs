@@ -38,6 +38,8 @@ internal static partial class RuntimeRuntimeListParticipantsCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-participants", @"Retrieves a list of [Participant](#schema_participant) for a given [Conversation](#schema_conversation).");
@@ -69,6 +71,7 @@ internal static partial class RuntimeRuntimeListParticipantsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

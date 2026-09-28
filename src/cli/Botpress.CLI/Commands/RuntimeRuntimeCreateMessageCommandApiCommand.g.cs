@@ -26,6 +26,8 @@ internal static partial class RuntimeRuntimeCreateMessageCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"create-message", @"Creates a new [Message](#schema_message). When creating a new [Message](#schema_message), the required tags must be provided. See the specific integration for more details.");
@@ -51,6 +53,7 @@ internal static partial class RuntimeRuntimeCreateMessageCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

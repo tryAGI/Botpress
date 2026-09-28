@@ -26,6 +26,8 @@ internal static partial class RuntimeRuntimeCreateConversationCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"create-conversation", @"Creates a new [Conversation](#schema_conversation). When creating a new [Conversation](#schema_conversation), the required tags must be provided. See the specific integration for more details.");
@@ -51,6 +53,7 @@ internal static partial class RuntimeRuntimeCreateConversationCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

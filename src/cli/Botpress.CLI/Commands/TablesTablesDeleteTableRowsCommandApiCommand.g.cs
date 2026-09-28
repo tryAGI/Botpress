@@ -50,6 +50,8 @@ internal static partial class TablesTablesDeleteTableRowsCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"delete-table-rows", @"Allows selective deletion of rows or complete clearance of a table.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesDeleteTableRowsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

@@ -26,6 +26,8 @@ internal static partial class RuntimeRuntimeCallActionCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"call-action", @"Call an action");
@@ -51,6 +53,7 @@ internal static partial class RuntimeRuntimeCallActionCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

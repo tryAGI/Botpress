@@ -50,6 +50,8 @@ internal static partial class TablesTablesUpdateTableCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"update-table", @"Updates the schema or the name of an existing table.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesUpdateTableCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

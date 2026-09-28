@@ -50,6 +50,8 @@ internal static partial class TablesTablesUpsertTableRowsCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"upsert-table-rows", @"Inserts or updates rows based on a key. If a row exists, it is updated; otherwise, a new row is created.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesUpsertTableRowsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

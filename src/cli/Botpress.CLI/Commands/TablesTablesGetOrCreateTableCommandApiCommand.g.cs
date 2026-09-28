@@ -50,6 +50,8 @@ internal static partial class TablesTablesGetOrCreateTableCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-or-create-table", @"Retrieves information about a specific table if it exists; otherwise, creates a new table based on the provided schema.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesGetOrCreateTableCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

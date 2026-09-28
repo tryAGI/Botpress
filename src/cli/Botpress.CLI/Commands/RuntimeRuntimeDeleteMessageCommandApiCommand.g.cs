@@ -32,6 +32,8 @@ internal static partial class RuntimeRuntimeDeleteMessageCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"delete-message", @"Permanently deletes a [Message](#schema_message). It cannot be undone.");
@@ -60,6 +62,7 @@ internal static partial class RuntimeRuntimeDeleteMessageCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

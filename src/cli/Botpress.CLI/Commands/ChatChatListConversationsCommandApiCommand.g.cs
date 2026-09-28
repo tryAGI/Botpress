@@ -40,6 +40,8 @@ internal static partial class ChatChatListConversationsCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-conversations", @"List Conversations
@@ -77,6 +79,7 @@ Returns a list of [Conversation](#schema_conversation) objects");
                                     cancellationToken).ConfigureAwait(false);
                                 }
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

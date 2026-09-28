@@ -50,6 +50,8 @@ internal static partial class TablesTablesUpdateTableRowsCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"update-table-rows", @"Updates specified rows in a table, allowing partial success with detailed feedback on errors.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesUpdateTableRowsCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

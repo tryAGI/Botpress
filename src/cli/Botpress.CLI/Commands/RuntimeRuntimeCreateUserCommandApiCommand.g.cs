@@ -26,6 +26,8 @@ internal static partial class RuntimeRuntimeCreateUserCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"create-user", @"Creates a new [User](#schema_user). When creating a new [User](#schema_user), the required tags must be provided. See the specific integration for more details.");
@@ -51,6 +53,7 @@ internal static partial class RuntimeRuntimeCreateUserCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

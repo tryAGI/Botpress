@@ -26,6 +26,8 @@ internal static partial class RuntimeRuntimeGetOrCreateConversationCommandApiCom
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-or-create-conversation", @"Retrieves the [Conversation](#schema_conversation) object containing given tags. If the conversation does not exist, it will be created. Tags will be updated if they are set in the request body.");
@@ -51,6 +53,7 @@ internal static partial class RuntimeRuntimeGetOrCreateConversationCommandApiCom
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

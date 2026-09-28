@@ -44,6 +44,8 @@ internal static partial class RuntimeRuntimeSetStateExpiryCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"set-state-expiry", @"Updates the [State](#schema_state) expiry.");
@@ -78,6 +80,7 @@ internal static partial class RuntimeRuntimeSetStateExpiryCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

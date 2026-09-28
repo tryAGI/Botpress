@@ -50,6 +50,8 @@ internal static partial class TablesTablesListTablesCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list-tables", @"Retrieves a list of all tables associated with your bot.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesListTablesCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

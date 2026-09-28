@@ -38,6 +38,8 @@ internal static partial class RuntimeRuntimeRemoveParticipantCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"remove-participant", @"Remove a [Participant](#schema_participant) from a [Conversation](#schema_conversation).");
@@ -69,6 +71,7 @@ internal static partial class RuntimeRuntimeRemoveParticipantCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

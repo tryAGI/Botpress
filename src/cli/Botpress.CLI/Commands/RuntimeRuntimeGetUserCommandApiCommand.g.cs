@@ -32,6 +32,8 @@ internal static partial class RuntimeRuntimeGetUserCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-user", @"Retrieves the [User](#schema_user) object for a valid identifier.");
@@ -60,6 +62,7 @@ internal static partial class RuntimeRuntimeGetUserCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

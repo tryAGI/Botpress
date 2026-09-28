@@ -50,6 +50,8 @@ internal static partial class TablesTablesRenameTableColumnCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"rename-table-column", @"Renames an existing column within a table to better reflect its content or usage. The operation targets a specific table and requires the current and new column names.");
@@ -87,6 +89,7 @@ internal static partial class TablesTablesRenameTableColumnCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

@@ -40,6 +40,8 @@ internal static partial class ChatChatGetOrCreateConversationCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-or-create-conversation", @"Get Or Create Conversation
@@ -69,6 +71,7 @@ Get or create a new [Conversation](#schema_conversation)");
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

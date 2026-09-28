@@ -44,6 +44,8 @@ internal static partial class RuntimeRuntimeGetStateCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"get-state", @"Retrieves the [State](#schema_state) object for a valid identifiers.");
@@ -78,6 +80,7 @@ internal static partial class RuntimeRuntimeGetStateCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

@@ -32,6 +32,8 @@ internal static partial class RuntimeRuntimeUpdateMessageCommandApiCommand
         Description = @"Integration alias",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"update-message", @"Updates a message tags and payload. The message type cannot be changed. Calling this operation from an integration, to update an incoming message, will not invoke the bot. The other way around it also true; Calling this operation from the bot, to update an outgoing message, will not invoke the integration.");
@@ -60,6 +62,7 @@ internal static partial class RuntimeRuntimeUpdateMessageCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

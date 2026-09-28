@@ -46,6 +46,8 @@ internal static partial class ChatChatRemoveParticipantCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"remove-participant", @"Remove Participant
@@ -78,6 +80,7 @@ Remove a [Participant](#schema_user) from a [Conversation](#schema_conversation)
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

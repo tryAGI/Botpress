@@ -62,6 +62,8 @@ internal static partial class FilesFilesCopyFileCommandApiCommand
         Description = @"User Role",
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"copy-file", @"Copy file");
@@ -105,6 +107,7 @@ internal static partial class FilesFilesCopyFileCommandApiCommand
 
                                 await CliRuntime.WriteSuccessAsync(parseResult, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

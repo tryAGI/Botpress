@@ -34,6 +34,8 @@ internal static partial class ChatChatDeleteUserCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"delete-user", @"Delete User
@@ -60,6 +62,7 @@ Permanently deletes a [User](#schema_user). It cannot be undone.");
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

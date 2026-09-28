@@ -4,8 +4,10 @@ using System.CommandLine;
 
 namespace Botpress.CLI.Commands;
 
-internal static class ApiCommand
+internal static partial class ApiCommand
 {
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command("api", "Generated endpoint commands.");
@@ -15,6 +17,7 @@ internal static class ApiCommand
                          command.Subcommands.Add(FilesApiGroupCommand.Create());
                          command.Subcommands.Add(RuntimeApiGroupCommand.Create());
                          command.Subcommands.Add(TablesApiGroupCommand.Create());
+        CustomizeCommand(ref command);
         return command;
     }
 }
