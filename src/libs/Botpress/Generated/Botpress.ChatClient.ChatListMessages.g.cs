@@ -169,9 +169,9 @@ namespace Botpress
                 PrepareChatListMessagesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xUserKey: xUserKey!,
+                    xUserKey: xUserKey,
                     nextToken: nextToken,
-                    conversationId: conversationId!);
+                    conversationId: conversationId);
 
                 return __httpRequest;
             }
@@ -193,7 +193,7 @@ namespace Botpress
                                 pathTemplate: "$\"/chat-api/conversations/{conversationId}/messages\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -227,7 +227,7 @@ namespace Botpress
                                 pathTemplate: "$\"/chat-api/conversations/{conversationId}/messages\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -268,7 +268,7 @@ namespace Botpress
                                 pathTemplate: "$\"/chat-api/conversations/{conversationId}/messages\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -316,7 +316,7 @@ namespace Botpress
                                 pathTemplate: "$\"/chat-api/conversations/{conversationId}/messages\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -338,7 +338,7 @@ namespace Botpress
                                 pathTemplate: "$\"/chat-api/conversations/{conversationId}/messages\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

@@ -155,7 +155,7 @@ namespace Botpress
                                 path: $"/v1/tables/{table}/row",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddRequiredParameter("id", id.ToString()!)
+                                .AddRequiredParameter("id", id.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."))
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Botpress.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -220,9 +220,9 @@ namespace Botpress
                 PrepareTablesGetTableRowRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    table: table!,
-                    id: id!,
-                    xBotId: xBotId!,
+                    table: table,
+                    id: id,
+                    xBotId: xBotId,
                     xIntegrationId: xIntegrationId,
                     xIntegrationAlias: xIntegrationAlias,
                     xIntegrationName: xIntegrationName,
@@ -249,7 +249,7 @@ namespace Botpress
                                 pathTemplate: "$\"/v1/tables/{table}/row\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -283,7 +283,7 @@ namespace Botpress
                                 pathTemplate: "$\"/v1/tables/{table}/row\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -324,7 +324,7 @@ namespace Botpress
                                 pathTemplate: "$\"/v1/tables/{table}/row\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -372,7 +372,7 @@ namespace Botpress
                                 pathTemplate: "$\"/v1/tables/{table}/row\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -394,7 +394,7 @@ namespace Botpress
                                 pathTemplate: "$\"/v1/tables/{table}/row\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
