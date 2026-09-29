@@ -47,9 +47,9 @@ internal static partial class RuntimeRuntimeListTagValuesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-tag-values", @"Get a bot tag values");
+        var command = new Command(commandName ?? @"list-tag-values", @"Get a bot tag values");
                         command.Arguments.Add(Key);
                         command.Options.Add(NextToken);
                         command.Options.Add(Type);

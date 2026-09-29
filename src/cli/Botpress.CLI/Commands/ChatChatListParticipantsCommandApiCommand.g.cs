@@ -48,9 +48,9 @@ internal static partial class ChatChatListParticipantsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-participants", @"List Participants
+        var command = new Command(commandName ?? @"list-participants", @"List Participants
 Retrieves a list of [Participants](#schema_user) for a given [Conversation](#schema_conversation).");
                         command.Arguments.Add(ConversationId);
                         command.Options.Add(XUserKey);

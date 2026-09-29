@@ -98,9 +98,9 @@ internal static partial class AdminAdminListIntegrationsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-integrations", @"List integrations, supports filtering and sorting capabilities");
+        var command = new Command(commandName ?? @"list-integrations", @"List integrations, supports filtering and sorting capabilities");
                         command.Options.Add(NextToken);
                         command.Options.Add(Limit);
                         command.Options.Add(NameOption);

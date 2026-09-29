@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeGetEventCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-event", @"Retrieves the [Event](#schema_event) object for a valid identifiers.");
+        var command = new Command(commandName ?? @"get-event", @"Retrieves the [Event](#schema_event) object for a valid identifiers.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

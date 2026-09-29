@@ -52,9 +52,9 @@ internal static partial class TablesTablesGetTableCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-table", @"Retrieves detailed information about a specific table, identified by its name or unique identifier.");
+        var command = new Command(commandName ?? @"get-table", @"Retrieves detailed information about a specific table, identified by its name or unique identifier.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

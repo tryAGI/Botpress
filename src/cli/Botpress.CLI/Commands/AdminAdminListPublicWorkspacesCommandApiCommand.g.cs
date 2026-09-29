@@ -33,9 +33,9 @@ internal static partial class AdminAdminListPublicWorkspacesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-public-workspaces", @"List public workspaces");
+        var command = new Command(commandName ?? @"list-public-workspaces", @"List public workspaces");
                         command.Options.Add(NextToken);
                         command.Options.Add(WorkspaceIds);
                         command.Options.Add(Search);

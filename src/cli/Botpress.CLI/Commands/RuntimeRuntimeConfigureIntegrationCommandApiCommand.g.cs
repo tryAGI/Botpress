@@ -28,9 +28,9 @@ internal static partial class RuntimeRuntimeConfigureIntegrationCommandApiComman
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"configure-integration", @"An integration can call this endpoint to configure itself");
+        var command = new Command(commandName ?? @"configure-integration", @"An integration can call this endpoint to configure itself");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

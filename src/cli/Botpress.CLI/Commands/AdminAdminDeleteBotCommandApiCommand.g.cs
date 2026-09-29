@@ -28,9 +28,9 @@ internal static partial class AdminAdminDeleteBotCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-bot", @"Delete bot");
+        var command = new Command(commandName ?? @"delete-bot", @"Delete bot");
                         command.Arguments.Add(Id);
                         command.Options.Add(XWorkspaceId);
                         command.Options.Add(XMultipleIntegrations);

@@ -52,9 +52,9 @@ internal static partial class TablesTablesListTablesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-tables", @"Retrieves a list of all tables associated with your bot.");
+        var command = new Command(commandName ?? @"list-tables", @"Retrieves a list of all tables associated with your bot.");
                         command.Options.Add(Tags);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

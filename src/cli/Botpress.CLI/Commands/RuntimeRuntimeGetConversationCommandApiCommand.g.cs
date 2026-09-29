@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeGetConversationCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-conversation", @"Retrieves the [Conversation](#schema_conversation) object for a valid identifier.");
+        var command = new Command(commandName ?? @"get-conversation", @"Retrieves the [Conversation](#schema_conversation) object for a valid identifier.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

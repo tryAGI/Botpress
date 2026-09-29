@@ -28,9 +28,9 @@ internal static partial class AdminAdminValidateIntegrationUpdateCommandApiComma
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"validate-integration-update", @"Perform a validation of an integration update request");
+        var command = new Command(commandName ?? @"validate-integration-update", @"Perform a validation of an integration update request");
                         command.Arguments.Add(Id);
                         command.Options.Add(XWorkspaceId);
                         command.Options.Add(XMultipleIntegrations);

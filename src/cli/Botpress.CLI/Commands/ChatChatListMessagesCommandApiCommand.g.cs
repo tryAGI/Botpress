@@ -48,9 +48,9 @@ internal static partial class ChatChatListMessagesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-messages", @"List Messages
+        var command = new Command(commandName ?? @"list-messages", @"List Messages
 Retrieves the conversation's [Messages](#schema_message)");
                         command.Arguments.Add(ConversationId);
                         command.Options.Add(XUserKey);

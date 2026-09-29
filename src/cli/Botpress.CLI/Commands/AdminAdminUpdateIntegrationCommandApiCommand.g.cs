@@ -28,9 +28,9 @@ internal static partial class AdminAdminUpdateIntegrationCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update-integration", @"Update integration");
+        var command = new Command(commandName ?? @"update-integration", @"Update integration");
                         command.Arguments.Add(Id);
                         command.Options.Add(XWorkspaceId);
                         command.Options.Add(XMultipleIntegrations);

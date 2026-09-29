@@ -52,9 +52,9 @@ internal static partial class TablesTablesFindTableRowsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"find-table-rows", @"Enables the search and filtering of rows within a table based on specific criteria. This operation supports complex queries for advanced data manipulation and retrieval.");
+        var command = new Command(commandName ?? @"find-table-rows", @"Enables the search and filtering of rows within a table based on specific criteria. This operation supports complex queries for advanced data manipulation and retrieval.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

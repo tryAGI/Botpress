@@ -40,9 +40,9 @@ internal static partial class RuntimeRuntimeRemoveParticipantCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"remove-participant", @"Remove a [Participant](#schema_participant) from a [Conversation](#schema_conversation).");
+        var command = new Command(commandName ?? @"remove-participant", @"Remove a [Participant](#schema_participant) from a [Conversation](#schema_conversation).");
                         command.Arguments.Add(Id);
                         command.Arguments.Add(UserId);
                         command.Options.Add(XBotId);

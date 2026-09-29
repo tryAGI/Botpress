@@ -50,9 +50,9 @@ internal static partial class AdminAdminListBotsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-bots", @"List bots");
+        var command = new Command(commandName ?? @"list-bots", @"List bots");
                         command.Options.Add(Dev);
                         command.Options.Add(Tags);
                         command.Options.Add(NextToken);

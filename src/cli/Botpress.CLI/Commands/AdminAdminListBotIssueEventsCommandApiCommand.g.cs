@@ -34,9 +34,9 @@ internal static partial class AdminAdminListBotIssueEventsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-bot-issue-events", @"List Events for a Bot Issue");
+        var command = new Command(commandName ?? @"list-bot-issue-events", @"List Events for a Bot Issue");
                         command.Arguments.Add(Id);
                         command.Arguments.Add(IssueId);
                         command.Options.Add(XWorkspaceId);

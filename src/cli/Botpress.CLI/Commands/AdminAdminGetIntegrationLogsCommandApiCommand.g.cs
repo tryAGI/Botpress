@@ -71,9 +71,9 @@ internal static partial class AdminAdminGetIntegrationLogsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-integration-logs", @"Get integration logs");
+        var command = new Command(commandName ?? @"get-integration-logs", @"Get integration logs");
                         command.Arguments.Add(Id);
                         command.Options.Add(TimeStart);
                         command.Options.Add(TimeEnd);

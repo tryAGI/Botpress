@@ -28,9 +28,9 @@ internal static partial class RuntimeRuntimeCreateEventCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-event", @"Creates a new [Event](#schema_event). When creating a new [Event](#schema_event), the required tags must be provided. See the specific integration for more details.");
+        var command = new Command(commandName ?? @"create-event", @"Creates a new [Event](#schema_event). When creating a new [Event](#schema_event), the required tags must be provided. See the specific integration for more details.");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

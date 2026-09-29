@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeGetUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-user", @"Retrieves the [User](#schema_user) object for a valid identifier.");
+        var command = new Command(commandName ?? @"get-user", @"Retrieves the [User](#schema_user) object for a valid identifier.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

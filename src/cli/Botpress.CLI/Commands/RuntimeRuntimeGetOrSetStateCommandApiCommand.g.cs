@@ -46,9 +46,9 @@ internal static partial class RuntimeRuntimeGetOrSetStateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-or-set-state", @"Retrieves the [State](#schema_state) object for a valid identifiers. If the state does not exist, it creates a new state.");
+        var command = new Command(commandName ?? @"get-or-set-state", @"Retrieves the [State](#schema_state) object for a valid identifiers. If the state does not exist, it creates a new state.");
                         command.Arguments.Add(Type);
                         command.Arguments.Add(Id);
                         command.Arguments.Add(NameOption);

@@ -28,9 +28,9 @@ internal static partial class RuntimeRuntimeCreateMessageCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-message", @"Creates a new [Message](#schema_message). When creating a new [Message](#schema_message), the required tags must be provided. See the specific integration for more details.");
+        var command = new Command(commandName ?? @"create-message", @"Creates a new [Message](#schema_message). When creating a new [Message](#schema_message), the required tags must be provided. See the specific integration for more details.");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

@@ -64,9 +64,9 @@ internal static partial class FilesFilesListFilePassagesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-file-passages", @"List passages for a file");
+        var command = new Command(commandName ?? @"list-file-passages", @"List passages for a file");
                         command.Arguments.Add(Id);
                         command.Options.Add(NextToken);
                         command.Options.Add(Limit);

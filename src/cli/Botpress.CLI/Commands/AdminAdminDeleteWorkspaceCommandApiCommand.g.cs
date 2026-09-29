@@ -21,9 +21,9 @@ internal static partial class AdminAdminDeleteWorkspaceCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-workspace", @"Delete workspace");
+        var command = new Command(commandName ?? @"delete-workspace", @"Delete workspace");
                         command.Arguments.Add(Id);
                         command.Options.Add(XMultipleIntegrations);
 

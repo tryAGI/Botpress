@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeGetMessageCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-message", @"Retrieves the [Message](#schema_message) object for a valid identifier.");
+        var command = new Command(commandName ?? @"get-message", @"Retrieves the [Message](#schema_message) object for a valid identifier.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

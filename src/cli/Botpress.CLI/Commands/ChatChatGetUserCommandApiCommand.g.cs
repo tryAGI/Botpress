@@ -36,9 +36,9 @@ internal static partial class ChatChatGetUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-user", @"Get User
+        var command = new Command(commandName ?? @"get-user", @"Get User
 Retrieves the [User](#schema_user) object for a valid identifier.");
                         command.Options.Add(XUserKey);
 

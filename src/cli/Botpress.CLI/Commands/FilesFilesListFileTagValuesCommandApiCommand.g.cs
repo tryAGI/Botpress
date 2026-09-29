@@ -58,9 +58,9 @@ internal static partial class FilesFilesListFileTagValuesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-file-tag-values", @"List available tags");
+        var command = new Command(commandName ?? @"list-file-tag-values", @"List available tags");
                         command.Arguments.Add(Tag);
                         command.Options.Add(NextToken);
                         command.Options.Add(XBotId);

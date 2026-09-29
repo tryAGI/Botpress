@@ -52,9 +52,9 @@ internal static partial class TablesTablesUpsertTableRowsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"upsert-table-rows", @"Inserts or updates rows based on a key. If a row exists, it is updated; otherwise, a new row is created.");
+        var command = new Command(commandName ?? @"upsert-table-rows", @"Inserts or updates rows based on a key. If a row exists, it is updated; otherwise, a new row is created.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

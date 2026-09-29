@@ -59,9 +59,9 @@ internal static partial class TablesTablesGetTableRowCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-table-row", @"Fetches a specific row from a table using the row's unique identifier.");
+        var command = new Command(commandName ?? @"get-table-row", @"Fetches a specific row from a table using the row's unique identifier.");
                         command.Arguments.Add(Table);
                         command.Options.Add(Id);
                         command.Options.Add(XBotId);

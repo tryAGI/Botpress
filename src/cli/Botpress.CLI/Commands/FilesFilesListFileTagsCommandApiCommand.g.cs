@@ -52,9 +52,9 @@ internal static partial class FilesFilesListFileTagsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-file-tags", @"List available tags");
+        var command = new Command(commandName ?? @"list-file-tags", @"List available tags");
                         command.Options.Add(NextToken);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

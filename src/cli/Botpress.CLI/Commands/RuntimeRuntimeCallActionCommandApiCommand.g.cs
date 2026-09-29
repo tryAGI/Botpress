@@ -28,9 +28,9 @@ internal static partial class RuntimeRuntimeCallActionCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"call-action", @"Call an action");
+        var command = new Command(commandName ?? @"call-action", @"Call an action");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

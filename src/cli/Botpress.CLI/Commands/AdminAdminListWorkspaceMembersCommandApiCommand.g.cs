@@ -28,9 +28,9 @@ internal static partial class AdminAdminListWorkspaceMembersCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-workspace-members", @"Lists all the members in a workspace");
+        var command = new Command(commandName ?? @"list-workspace-members", @"Lists all the members in a workspace");
                         command.Options.Add(NextToken);
                         command.Options.Add(XWorkspaceId);
                         command.Options.Add(XMultipleIntegrations);

@@ -49,9 +49,9 @@ internal static partial class ChatChatAddParticipantCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"add-participant", @"Add Participant
+        var command = new Command(commandName ?? @"add-participant", @"Add Participant
 Add a [Participant](#schema_user) to a [Conversation](#schema_conversation).");
                         command.Arguments.Add(ConversationId);
                         command.Options.Add(XUserKey);

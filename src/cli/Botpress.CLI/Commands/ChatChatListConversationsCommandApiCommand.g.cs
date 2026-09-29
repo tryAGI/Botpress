@@ -42,9 +42,9 @@ internal static partial class ChatChatListConversationsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-conversations", @"List Conversations
+        var command = new Command(commandName ?? @"list-conversations", @"List Conversations
 Returns a list of [Conversation](#schema_conversation) objects");
                         command.Options.Add(XUserKey);
                         command.Options.Add(NextToken);

@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeUpdateUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update-user", @"Update a [User](#schema_user) object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.");
+        var command = new Command(commandName ?? @"update-user", @"Update a [User](#schema_user) object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

@@ -42,9 +42,9 @@ internal static partial class ChatChatGetEventCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-event", @"Get Event
+        var command = new Command(commandName ?? @"get-event", @"Get Event
 Retrieves the [Event](#schema_event) object for a valid identifier.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XUserKey);

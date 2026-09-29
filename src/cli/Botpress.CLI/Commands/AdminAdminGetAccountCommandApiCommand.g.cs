@@ -15,9 +15,9 @@ internal static partial class AdminAdminGetAccountCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-account", @"Get details of the account authenticating with this endpoint.");
+        var command = new Command(commandName ?? @"get-account", @"Get details of the account authenticating with this endpoint.");
                         command.Options.Add(XMultipleIntegrations);
 
 

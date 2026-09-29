@@ -46,9 +46,9 @@ internal static partial class RuntimeRuntimeSetStateExpiryCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"set-state-expiry", @"Updates the [State](#schema_state) expiry.");
+        var command = new Command(commandName ?? @"set-state-expiry", @"Updates the [State](#schema_state) expiry.");
                         command.Arguments.Add(Type);
                         command.Arguments.Add(Id);
                         command.Arguments.Add(NameOption);

@@ -48,9 +48,9 @@ internal static partial class ChatChatRemoveParticipantCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"remove-participant", @"Remove Participant
+        var command = new Command(commandName ?? @"remove-participant", @"Remove Participant
 Remove a [Participant](#schema_user) from a [Conversation](#schema_conversation).");
                         command.Arguments.Add(ConversationId);
                         command.Arguments.Add(UserId);

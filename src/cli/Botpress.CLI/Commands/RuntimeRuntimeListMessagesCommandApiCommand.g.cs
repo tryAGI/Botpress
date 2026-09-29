@@ -58,9 +58,9 @@ internal static partial class RuntimeRuntimeListMessagesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-messages", @"Retrieves a list of [Message](#schema_message) you’ve previously created. The messages are returned in sorted order, with the most recent appearing first. The list can be filtered using [Tags](/docs/developers/concepts/tags).");
+        var command = new Command(commandName ?? @"list-messages", @"Retrieves a list of [Message](#schema_message) you’ve previously created. The messages are returned in sorted order, with the most recent appearing first. The list can be filtered using [Tags](/docs/developers/concepts/tags).");
                         command.Options.Add(NextToken);
                         command.Options.Add(ConversationId);
                         command.Options.Add(Tags);

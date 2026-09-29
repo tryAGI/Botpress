@@ -82,9 +82,9 @@ internal static partial class RuntimeRuntimeListConversationsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-conversations", @"Retrieves a list of [Conversation](#schema_conversation) you’ve previously created. The conversations are returned in sorted order, with the most recent appearing first. The list can be filtered using [Tags](#tags).");
+        var command = new Command(commandName ?? @"list-conversations", @"Retrieves a list of [Conversation](#schema_conversation) you’ve previously created. The conversations are returned in sorted order, with the most recent appearing first. The list can be filtered using [Tags](#tags).");
                         command.Options.Add(NextToken);
                         command.Options.Add(SortField);
                         command.Options.Add(SortDirection);

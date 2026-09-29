@@ -52,9 +52,9 @@ internal static partial class TablesTablesDeleteTableCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-table", @"Permanently deletes a table and all its associated data from the system. Use with caution, as this action cannot be undone.");
+        var command = new Command(commandName ?? @"delete-table", @"Permanently deletes a table and all its associated data from the system. Use with caution, as this action cannot be undone.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

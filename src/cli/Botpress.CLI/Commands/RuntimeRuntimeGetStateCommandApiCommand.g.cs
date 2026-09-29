@@ -46,9 +46,9 @@ internal static partial class RuntimeRuntimeGetStateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-state", @"Retrieves the [State](#schema_state) object for a valid identifiers.");
+        var command = new Command(commandName ?? @"get-state", @"Retrieves the [State](#schema_state) object for a valid identifiers.");
                         command.Arguments.Add(Type);
                         command.Arguments.Add(Id);
                         command.Arguments.Add(NameOption);

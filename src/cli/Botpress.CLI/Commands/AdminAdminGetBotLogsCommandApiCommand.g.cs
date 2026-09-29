@@ -77,9 +77,9 @@ internal static partial class AdminAdminGetBotLogsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-bot-logs", @"Get bot logs");
+        var command = new Command(commandName ?? @"get-bot-logs", @"Get bot logs");
                         command.Arguments.Add(Id);
                         command.Options.Add(TimeStart);
                         command.Options.Add(TimeEnd);

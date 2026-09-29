@@ -48,9 +48,9 @@ internal static partial class ChatChatGetParticipantCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-participant", @"Get Participant
+        var command = new Command(commandName ?? @"get-participant", @"Get Participant
 Retrieves a [Participant](#schema_user) from a [Conversation](#schema_conversation).");
                         command.Arguments.Add(ConversationId);
                         command.Arguments.Add(UserId);
