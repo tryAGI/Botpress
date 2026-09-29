@@ -28,9 +28,9 @@ internal static partial class RuntimeRuntimeGetOrCreateMessageCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-or-create-message", @"Retrieves the [Message](#schema_message) object for given discriminating tags. If the message does not exist, it will be created. If the message already exists, its tags and payload will be updated with the provided values if they are defined.");
+        var command = new Command(commandName ?? @"get-or-create-message", @"Retrieves the [Message](#schema_message) object for given discriminating tags. If the message does not exist, it will be created. If the message already exists, its tags and payload will be updated with the provided values if they are defined.");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

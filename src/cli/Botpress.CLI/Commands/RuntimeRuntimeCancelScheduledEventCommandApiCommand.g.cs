@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeCancelScheduledEventCommandApiComman
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"cancel-scheduled-event", @"Permanently cancels a scheduled [Event](#schema_event). The event must be in a `scheduled` state.");
+        var command = new Command(commandName ?? @"cancel-scheduled-event", @"Permanently cancels a scheduled [Event](#schema_event). The event must be in a `scheduled` state.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

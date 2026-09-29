@@ -52,9 +52,9 @@ internal static partial class TablesTablesRenameTableColumnCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"rename-table-column", @"Renames an existing column within a table to better reflect its content or usage. The operation targets a specific table and requires the current and new column names.");
+        var command = new Command(commandName ?? @"rename-table-column", @"Renames an existing column within a table to better reflect its content or usage. The operation targets a specific table and requires the current and new column names.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

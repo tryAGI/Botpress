@@ -52,9 +52,9 @@ internal static partial class TablesTablesGetOrCreateTableCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-or-create-table", @"Retrieves information about a specific table if it exists; otherwise, creates a new table based on the provided schema.");
+        var command = new Command(commandName ?? @"get-or-create-table", @"Retrieves information about a specific table if it exists; otherwise, creates a new table based on the provided schema.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

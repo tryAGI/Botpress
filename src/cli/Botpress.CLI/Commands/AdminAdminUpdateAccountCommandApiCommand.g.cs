@@ -15,9 +15,9 @@ internal static partial class AdminAdminUpdateAccountCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update-account", @"Update details of the account associated with authenticated user");
+        var command = new Command(commandName ?? @"update-account", @"Update details of the account associated with authenticated user");
                         command.Options.Add(XMultipleIntegrations);
 
 

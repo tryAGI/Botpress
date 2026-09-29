@@ -15,9 +15,9 @@ internal static partial class AdminAdminCreateWorkspaceCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-workspace", @"Create workspace");
+        var command = new Command(commandName ?? @"create-workspace", @"Create workspace");
                         command.Options.Add(XMultipleIntegrations);
 
 

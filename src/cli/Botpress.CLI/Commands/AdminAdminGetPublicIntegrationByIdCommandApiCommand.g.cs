@@ -21,9 +21,9 @@ internal static partial class AdminAdminGetPublicIntegrationByIdCommandApiComman
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-public-integration-by-id", @"Get public integration by Id");
+        var command = new Command(commandName ?? @"get-public-integration-by-id", @"Get public integration by Id");
                         command.Arguments.Add(Id);
                         command.Options.Add(XMultipleIntegrations);
 

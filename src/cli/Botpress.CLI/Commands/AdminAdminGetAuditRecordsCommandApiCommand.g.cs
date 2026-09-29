@@ -27,9 +27,9 @@ internal static partial class AdminAdminGetAuditRecordsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-audit-records", @"Get the audit records of a workspace, sorted from most recent to oldest.");
+        var command = new Command(commandName ?? @"get-audit-records", @"Get the audit records of a workspace, sorted from most recent to oldest.");
                         command.Arguments.Add(Id);
                         command.Options.Add(NextToken);
                         command.Options.Add(XMultipleIntegrations);

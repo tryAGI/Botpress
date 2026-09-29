@@ -42,9 +42,9 @@ internal static partial class AdminAdminGetBotAnalyticsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-bot-analytics", @"Get bot analytics");
+        var command = new Command(commandName ?? @"get-bot-analytics", @"Get bot analytics");
                         command.Arguments.Add(Id);
                         command.Options.Add(StartDate);
                         command.Options.Add(EndDate);

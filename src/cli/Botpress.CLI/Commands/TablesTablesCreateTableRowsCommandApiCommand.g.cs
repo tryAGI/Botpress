@@ -52,9 +52,9 @@ internal static partial class TablesTablesCreateTableRowsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-table-rows", @"Inserts one or multiple new rows into the specified table.");
+        var command = new Command(commandName ?? @"create-table-rows", @"Inserts one or multiple new rows into the specified table.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

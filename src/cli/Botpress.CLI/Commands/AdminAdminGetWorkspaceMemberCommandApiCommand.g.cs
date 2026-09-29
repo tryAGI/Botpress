@@ -22,9 +22,9 @@ internal static partial class AdminAdminGetWorkspaceMemberCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-workspace-member", @"Get details of the account authenticating with this endpoint.");
+        var command = new Command(commandName ?? @"get-workspace-member", @"Get details of the account authenticating with this endpoint.");
                         command.Options.Add(XWorkspaceId);
                         command.Options.Add(XMultipleIntegrations);
 

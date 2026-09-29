@@ -64,9 +64,9 @@ internal static partial class FilesFilesCopyFileCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"copy-file", @"Copy file");
+        var command = new Command(commandName ?? @"copy-file", @"Copy file");
                         command.Arguments.Add(IdOrKey);
                         command.Arguments.Add(DestinationKey);
                         command.Options.Add(XDestinationBotId);

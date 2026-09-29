@@ -81,9 +81,9 @@ internal static partial class AdminAdminListPublicIntegrationsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-public-integrations", @"List public integration");
+        var command = new Command(commandName ?? @"list-public-integrations", @"List public integration");
                         command.Options.Add(NextToken);
                         command.Options.Add(Limit);
                         command.Options.Add(NameOption);

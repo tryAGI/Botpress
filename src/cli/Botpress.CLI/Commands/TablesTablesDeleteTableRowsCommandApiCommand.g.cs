@@ -52,9 +52,9 @@ internal static partial class TablesTablesDeleteTableRowsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-table-rows", @"Allows selective deletion of rows or complete clearance of a table.");
+        var command = new Command(commandName ?? @"delete-table-rows", @"Allows selective deletion of rows or complete clearance of a table.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

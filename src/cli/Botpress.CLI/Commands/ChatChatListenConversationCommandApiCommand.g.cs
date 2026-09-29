@@ -42,9 +42,9 @@ internal static partial class ChatChatListenConversationCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"listen-conversation", @"Listen Conversation
+        var command = new Command(commandName ?? @"listen-conversation", @"Listen Conversation
 Creates a SSE stream to receive messages and events from a conversation");
                         command.Arguments.Add(Id);
                         command.Options.Add(XUserKey);

@@ -42,9 +42,9 @@ internal static partial class ChatChatGetMessageCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-message", @"Get Message
+        var command = new Command(commandName ?? @"get-message", @"Get Message
 Retrieves the [Message](#schema_message) object for a valid identifier.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XUserKey);

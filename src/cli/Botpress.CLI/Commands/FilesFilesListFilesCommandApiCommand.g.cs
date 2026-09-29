@@ -80,9 +80,9 @@ internal static partial class FilesFilesListFilesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-files", @"List files for bot");
+        var command = new Command(commandName ?? @"list-files", @"List files for bot");
                         command.Options.Add(NextToken);
                         command.Options.Add(SortField);
                         command.Options.Add(SortDirection);

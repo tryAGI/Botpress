@@ -27,9 +27,9 @@ internal static partial class AdminAdminListWorkspacesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-workspaces", @"List workspaces the user has access to");
+        var command = new Command(commandName ?? @"list-workspaces", @"List workspaces the user has access to");
                         command.Options.Add(NextToken);
                         command.Options.Add(Handle);
                         command.Options.Add(XMultipleIntegrations);

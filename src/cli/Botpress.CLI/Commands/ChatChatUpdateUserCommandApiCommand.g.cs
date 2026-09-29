@@ -70,9 +70,9 @@ internal static partial class ChatChatUpdateUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update-user", @"Update User
+        var command = new Command(commandName ?? @"update-user", @"Update User
 Update [User](#schema_user)");
                         command.Options.Add(XUserKey);
                         command.Options.Add(NameOption);

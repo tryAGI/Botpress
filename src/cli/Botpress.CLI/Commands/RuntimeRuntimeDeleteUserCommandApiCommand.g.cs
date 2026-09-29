@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeDeleteUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-user", @"Permanently deletes a [User](#schema_user). It cannot be undone.");
+        var command = new Command(commandName ?? @"delete-user", @"Permanently deletes a [User](#schema_user). It cannot be undone.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

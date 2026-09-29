@@ -22,9 +22,9 @@ internal static partial class AdminAdminCreateBotCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-bot", @"Create bot");
+        var command = new Command(commandName ?? @"create-bot", @"Create bot");
                         command.Options.Add(XWorkspaceId);
                         command.Options.Add(XMultipleIntegrations);
 

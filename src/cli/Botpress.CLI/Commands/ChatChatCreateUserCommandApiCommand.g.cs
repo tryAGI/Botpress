@@ -69,9 +69,9 @@ internal static partial class ChatChatCreateUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-user", @"Create User
+        var command = new Command(commandName ?? @"create-user", @"Create User
 Creates a new [User](#schema_user). This operation can only be called when using the shared encryption key.");
                         command.Options.Add(NameOption);
                         command.Options.Add(PictureUrl);

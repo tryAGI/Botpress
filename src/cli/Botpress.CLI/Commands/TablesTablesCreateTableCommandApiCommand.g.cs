@@ -46,9 +46,9 @@ internal static partial class TablesTablesCreateTableCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-table", @"Initiates the creation of a new table based on the provided schema, excluding system-managed fields like IDs and timestamps.");
+        var command = new Command(commandName ?? @"create-table", @"Initiates the creation of a new table based on the provided schema, excluding system-managed fields like IDs and timestamps.");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

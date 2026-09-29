@@ -70,9 +70,9 @@ internal static partial class ChatChatGetOrCreateUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-or-create-user", @"Get Or Create User
+        var command = new Command(commandName ?? @"get-or-create-user", @"Get Or Create User
 Get or create a new [User](#schema_user)");
                         command.Options.Add(XUserKey);
                         command.Options.Add(NameOption);

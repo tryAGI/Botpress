@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeDeleteMessageCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-message", @"Permanently deletes a [Message](#schema_message). It cannot be undone.");
+        var command = new Command(commandName ?? @"delete-message", @"Permanently deletes a [Message](#schema_message). It cannot be undone.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

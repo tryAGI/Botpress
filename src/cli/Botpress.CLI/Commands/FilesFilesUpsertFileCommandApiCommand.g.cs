@@ -46,9 +46,9 @@ internal static partial class FilesFilesUpsertFileCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"upsert-file", @"Creates or updates a file using the `key` parameter as unique identifier. Updating a file will erase the existing content of the file. Upload the file content by sending it in a PUT request to the `uploadUrl` returned in the response.");
+        var command = new Command(commandName ?? @"upsert-file", @"Creates or updates a file using the `key` parameter as unique identifier. Updating a file will erase the existing content of the file. Upload the file content by sending it in a PUT request to the `uploadUrl` returned in the response.");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

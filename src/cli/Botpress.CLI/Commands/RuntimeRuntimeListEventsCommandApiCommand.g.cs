@@ -70,9 +70,9 @@ internal static partial class RuntimeRuntimeListEventsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-events", @"Retrieves a list of [Event](#schema_event) you’ve previously created. The events are returned in sorted order, with the most recent appearing first.");
+        var command = new Command(commandName ?? @"list-events", @"Retrieves a list of [Event](#schema_event) you’ve previously created. The events are returned in sorted order, with the most recent appearing first.");
                         command.Options.Add(NextToken);
                         command.Options.Add(Type);
                         command.Options.Add(ConversationId);

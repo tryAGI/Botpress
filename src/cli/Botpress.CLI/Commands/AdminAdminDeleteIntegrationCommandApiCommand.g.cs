@@ -28,9 +28,9 @@ internal static partial class AdminAdminDeleteIntegrationCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-integration", @"Delete integration");
+        var command = new Command(commandName ?? @"delete-integration", @"Delete integration");
                         command.Arguments.Add(Id);
                         command.Options.Add(XWorkspaceId);
                         command.Options.Add(XMultipleIntegrations);

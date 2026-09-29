@@ -28,9 +28,9 @@ internal static partial class RuntimeRuntimeGetOrCreateUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-or-create-user", @"Retrieves the [User](#schema_user) object for given discriminating tags. If the user does not exist, it will be created. If the user already exists, its name, pictureUrl, attributes, and tags will be updated with the provided values.");
+        var command = new Command(commandName ?? @"get-or-create-user", @"Retrieves the [User](#schema_user) object for given discriminating tags. If the user does not exist, it will be created. If the user already exists, its name, pictureUrl, attributes, and tags will be updated with the provided values.");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

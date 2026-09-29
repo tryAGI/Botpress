@@ -76,9 +76,9 @@ internal static partial class RuntimeRuntimeListUsersCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-users", @"Retrieves a list of [User](#schema_user) previously created. The users are returned in sorted order, with the most recent appearing first. The list can be filtered using [Tags](/docs/developers/concepts/tags).");
+        var command = new Command(commandName ?? @"list-users", @"Retrieves a list of [User](#schema_user) previously created. The users are returned in sorted order, with the most recent appearing first. The list can be filtered using [Tags](/docs/developers/concepts/tags).");
                         command.Options.Add(NextToken);
                         command.Options.Add(ConversationId);
                         command.Options.Add(Tags);

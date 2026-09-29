@@ -42,9 +42,9 @@ internal static partial class ChatChatDeleteMessageCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-message", @"Delete Message
+        var command = new Command(commandName ?? @"delete-message", @"Delete Message
 Permanently deletes a [Message](#schema_message). It cannot be undone.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XUserKey);

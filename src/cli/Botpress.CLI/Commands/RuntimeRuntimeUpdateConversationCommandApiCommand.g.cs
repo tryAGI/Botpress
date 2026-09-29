@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeUpdateConversationCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update-conversation", @"Update a [Conversation](#schema_conversation) object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.");
+        var command = new Command(commandName ?? @"update-conversation", @"Update a [Conversation](#schema_conversation) object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

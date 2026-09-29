@@ -36,9 +36,9 @@ internal static partial class ChatChatDeleteUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete-user", @"Delete User
+        var command = new Command(commandName ?? @"delete-user", @"Delete User
 Permanently deletes a [User](#schema_user). It cannot be undone.");
                         command.Options.Add(XUserKey);
 

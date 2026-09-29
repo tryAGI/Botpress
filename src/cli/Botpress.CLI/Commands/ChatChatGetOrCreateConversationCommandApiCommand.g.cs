@@ -42,9 +42,9 @@ internal static partial class ChatChatGetOrCreateConversationCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get-or-create-conversation", @"Get Or Create Conversation
+        var command = new Command(commandName ?? @"get-or-create-conversation", @"Get Or Create Conversation
 Get or create a new [Conversation](#schema_conversation)");
                         command.Arguments.Add(Id);
                         command.Options.Add(XUserKey);

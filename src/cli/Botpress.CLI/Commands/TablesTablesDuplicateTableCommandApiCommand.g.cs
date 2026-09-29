@@ -52,9 +52,9 @@ internal static partial class TablesTablesDuplicateTableCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"duplicate-table", @"Duplicates the table schema &amp; content");
+        var command = new Command(commandName ?? @"duplicate-table", @"Duplicates the table schema &amp; content");
                         command.Arguments.Add(SourceTableId);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

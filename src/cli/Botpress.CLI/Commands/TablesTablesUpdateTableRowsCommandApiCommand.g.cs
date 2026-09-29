@@ -52,9 +52,9 @@ internal static partial class TablesTablesUpdateTableRowsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update-table-rows", @"Updates specified rows in a table, allowing partial success with detailed feedback on errors.");
+        var command = new Command(commandName ?? @"update-table-rows", @"Updates specified rows in a table, allowing partial success with detailed feedback on errors.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

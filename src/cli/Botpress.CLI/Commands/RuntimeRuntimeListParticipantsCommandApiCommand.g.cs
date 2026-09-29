@@ -40,9 +40,9 @@ internal static partial class RuntimeRuntimeListParticipantsCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list-participants", @"Retrieves a list of [Participant](#schema_participant) for a given [Conversation](#schema_conversation).");
+        var command = new Command(commandName ?? @"list-participants", @"Retrieves a list of [Participant](#schema_participant) for a given [Conversation](#schema_conversation).");
                         command.Arguments.Add(Id);
                         command.Options.Add(NextToken);
                         command.Options.Add(XBotId);

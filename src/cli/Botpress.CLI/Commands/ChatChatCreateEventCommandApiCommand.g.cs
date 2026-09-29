@@ -50,9 +50,9 @@ internal static partial class ChatChatCreateEventCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-event", @"Create Event
+        var command = new Command(commandName ?? @"create-event", @"Create Event
 Creates a custom [Event](#schema_event)");
                         command.Options.Add(XUserKey);
                         command.Options.Add(Payload);

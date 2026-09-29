@@ -28,9 +28,9 @@ internal static partial class RuntimeRuntimeCreateUserCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create-user", @"Creates a new [User](#schema_user). When creating a new [User](#schema_user), the required tags must be provided. See the specific integration for more details.");
+        var command = new Command(commandName ?? @"create-user", @"Creates a new [User](#schema_user). When creating a new [User](#schema_user), the required tags must be provided. See the specific integration for more details.");
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);
                         command.Options.Add(XIntegrationAlias);

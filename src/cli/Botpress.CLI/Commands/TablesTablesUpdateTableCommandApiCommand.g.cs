@@ -52,9 +52,9 @@ internal static partial class TablesTablesUpdateTableCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update-table", @"Updates the schema or the name of an existing table.");
+        var command = new Command(commandName ?? @"update-table", @"Updates the schema or the name of an existing table.");
                         command.Arguments.Add(Table);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

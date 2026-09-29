@@ -46,9 +46,9 @@ internal static partial class RuntimeRuntimePatchStateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"patch-state", @"Updates the [State](#schema_state) object by setting the values of the parameters passed.");
+        var command = new Command(commandName ?? @"patch-state", @"Updates the [State](#schema_state) object by setting the values of the parameters passed.");
                         command.Arguments.Add(Type);
                         command.Arguments.Add(Id);
                         command.Arguments.Add(NameOption);

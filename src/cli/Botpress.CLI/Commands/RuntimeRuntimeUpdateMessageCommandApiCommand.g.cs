@@ -34,9 +34,9 @@ internal static partial class RuntimeRuntimeUpdateMessageCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update-message", @"Updates a message tags and payload. The message type cannot be changed. Calling this operation from an integration, to update an incoming message, will not invoke the bot. The other way around it also true; Calling this operation from the bot, to update an outgoing message, will not invoke the integration.");
+        var command = new Command(commandName ?? @"update-message", @"Updates a message tags and payload. The message type cannot be changed. Calling this operation from an integration, to update an incoming message, will not invoke the bot. The other way around it also true; Calling this operation from the bot, to update an outgoing message, will not invoke the integration.");
                         command.Arguments.Add(Id);
                         command.Options.Add(XBotId);
                         command.Options.Add(XIntegrationId);

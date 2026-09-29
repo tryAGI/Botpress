@@ -83,9 +83,9 @@ internal static partial class FilesFilesSearchFilesCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"search-files", @"Search files");
+        var command = new Command(commandName ?? @"search-files", @"Search files");
                         command.Options.Add(Tags);
                         command.Options.Add(Query);
                         command.Options.Add(ContextDepth);
