@@ -18,7 +18,7 @@ namespace Botpress.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Botpress.RuntimeSetStateTypeExtensions.ToEnum(stringValue) ?? default;
+                        return global::Botpress.RuntimeSetStateTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::Botpress.RuntimeSetStateType.");
                     }
 
                     break;
