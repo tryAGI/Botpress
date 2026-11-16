@@ -343,19 +343,19 @@ namespace Botpress
                             {
                                 string? __content_default = null;
                                 global::System.Exception? __exception_default = null;
-                                global::Botpress.ChatGetConversationResponse2? __value_default = null;
+                                global::Botpress.ChatGetConversationResponse? __value_default = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_default = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_default = global::Botpress.ChatGetConversationResponse2.FromJson(__content_default, JsonSerializerContext);
+                                        __value_default = global::Botpress.ChatGetConversationResponse.FromJson(__content_default, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_default = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_default = global::Botpress.ChatGetConversationResponse2.FromJson(__content_default, JsonSerializerContext);
+                                        __value_default = global::Botpress.ChatGetConversationResponse.FromJson(__content_default, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -364,7 +364,7 @@ namespace Botpress
                                 }
 
 
-                                throw global::Botpress.ApiException<global::Botpress.ChatGetConversationResponse2>.Create(
+                                throw global::Botpress.ApiException<global::Botpress.ChatGetConversationResponse>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_default ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_default,
