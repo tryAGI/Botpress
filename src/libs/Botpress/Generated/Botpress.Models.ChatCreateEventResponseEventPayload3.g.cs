@@ -4,7 +4,7 @@
 namespace Botpress
 {
     /// <summary>
-    /// Payload is the content of the custom event.
+    ///
     /// </summary>
     public sealed partial class ChatCreateEventResponseEventPayload3
     {
